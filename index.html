@@ -113,6 +113,38 @@
         <tbody>
 
 
+
+    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="27%">
+          <div class="one"><img src="./haoqi_files/rlgpt.png" width="190px"></div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="73%">
+              <papertitle> RL-GPT: Integrating Reinforcement Learning and Code-as-policy 
+</papertitle>
+      <br>
+        <a href="https://www.shaotengliu.com/">Shaoteng Liu</a>, <strong>Haoqi Yuan</strong>, Minda Hu, Yanwei Li, Yukang Chen, Shu Liu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>,   <a href="https://jiaya.me/home">Jiaya Jia</a>.
+      <br>
+        2023 <br>
+          <a href="https://arxiv.org/abs/2402.19299">arXiv</a>
+          /
+          <a href="https://sites.google.com/view/rl-gpt">project page</a>
+          /
+          <a href="./haoqi_files/rlgpt.bib">bibtex</a>
+          <p></p>
+          <p> RL-GPT equips Large Language Models (LLMs) with Reinforcement Learning (RL) tools, empowering LLM agents to solve challenging tasks in complex, open-world environments. It has a hierarchical framework: a slow LLM agent plans subtasks and selects proper tools (RL or code-as-policy); a fast LLM agent instantiates RL training pipelines or generates code to learn subtasks. LLM agents can perform self-improvement via trial-and-error efficiently. RL-GPT shows great efficiency on solving diverse Minecraft tasks, obtaining Diamond at 8% success rate within 3M environment steps. </p>
+        </td>
+      </tr>
+
+
     <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
         <td width="27%">
           <div class="one"><img src="./haoqi_files/ptgm.png" width="190px"></div>
@@ -412,6 +444,7 @@
     <tbody><tr>
       <td width="100%" valign="middle">
         <strong><heading>Awards</heading></strong>
+        <p>2022: <a href="http://idm.pku.edu.cn/info/1012/1629.htm">NERCVT</a> Outstanding Student of the Year</p>
         <p>2022: Peking University President Scholarship</p>
         <p>2021: Peking University President Scholarship</p>
         <p>2020: John Hopcroft Scholarship</p>
