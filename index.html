@@ -63,7 +63,7 @@
     }
   </style>
   <link rel="icon" type="image/png" href="https://jonbarron.info/seal_icon.png">
-  <title>Haoqi Yuan (袁昊琦)</title>
+  <title>Haoqi Yuan 袁昊琦</title>
   
   <link href="./haoqi_files/css" rel="stylesheet" type="text/css">
   <script charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/btype.js"></script></head>
@@ -76,15 +76,15 @@
       <tbody><tr>
         <td width="100%" valign="middle">
         <p align="center">
-          <name>Haoqi Yuan (袁昊琦)</name>
+          <name>Haoqi Yuan 袁昊琦</name>
         </p>
         <p>
-          I am a third-year Ph.D. student at <a href="http://english.pku.edu.cn/">Peking University</a>, advised by <a href="https://z0ngqing.github.io/"> Prof. Zongqing Lu</a>.
+          I am a fourth-year Ph.D. student at <a href="http://english.pku.edu.cn/">Peking University</a>, advised by <a href="https://z0ngqing.github.io/"> Prof. Zongqing Lu</a>.
           I received my Bachelor's degree in 2021, from the <a href="https://cfcs.pku.edu.cn/english/research/turingprogram/introduction1/index.htm">Turing Class</a> at Peking University.
         </p>
         <p>
             My research interest primarily lies in reinforcement learning (RL), representation learning, and generative modeling.
-            Currently, I am focusing on: (1) pre-training methodologies for RL; (2) integrating foundation models with RL.
+            Currently, I am focusing on: (1) pre-training and generalization in RL; (2) integrating foundation models with RL.
         </p>
 
         <p align="center">
@@ -113,6 +113,35 @@
         <tbody>
 
 
+    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="27%">
+          <div class="one"><img src="./haoqi_files/mgpo.png" width="190px"></div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="73%">
+              <papertitle>Pre-Trained Multi-Goal Transformers with Prompt Optimization for Efficient Online Adaptation
+</papertitle>
+      <br>
+      <strong>Haoqi Yuan</strong>, Yuhui Fu, Feiyang Xie, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
+      <br>
+          <em>NeurIPS</em>, 2024 <br>
+          <!-- <a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
+          /
+          <a href="./haoqi_files/ptgm.bib">bibtex</a>
+          <p></p> -->
+
+          <p> Previous works in skill pre-training utilize offline, task-agnostic dataset to accelerate RL. However, these approaches still require substantial RL steps to learn a new task. We propose MGPO, a method that leverages the power of Transformer-based policies to model sequences of goals during offline pre-training, enabling efficient online adaptation through prompt optimization.  </p>
+        </td>
+      </tr>
+
 
     <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
         <td width="27%">
@@ -132,8 +161,7 @@
 </papertitle>
       <br>
         <a href="https://www.shaotengliu.com/">Shaoteng Liu</a>, <strong>Haoqi Yuan</strong>, Minda Hu, Yanwei Li, Yukang Chen, Shu Liu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>,   <a href="https://jiaya.me/home">Jiaya Jia</a>.
-      <br>
-        2023 <br>
+      <br> <em>NeurIPS <b>oral</b></em>, 2024 <br>
           <a href="https://arxiv.org/abs/2402.19299">arXiv</a>
           /
           <a href="https://sites.google.com/view/rl-gpt">project page</a>
@@ -427,7 +455,7 @@
       <td width="100%" valign="middle">
         <strong><heading>Services</heading></strong>
         <p style="font-size:14px;line-height:2em">
-          <b>Reviewer:</b> <br> ICML 22,24. NeurIPS 22,23. ICLR 24. AAAI 23, 24, CVPR 24.
+          <b>Reviewer:</b> <br> ICML'22,24. NeurIPS'22,23,24. ICLR'24,25. AAAI'23,24,25, CVPR'24.
         </p>
         <p style="font-size:14px;line-height:2em">
           <b>Teaching Assistant: </b> <br>
