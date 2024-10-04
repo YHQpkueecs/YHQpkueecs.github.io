@@ -80,11 +80,11 @@
         </p>
         <p>
           I am a fourth-year Ph.D. student at <a href="http://english.pku.edu.cn/">Peking University</a>, advised by <a href="https://z0ngqing.github.io/"> Prof. Zongqing Lu</a>.
-          I received my Bachelor's degree in 2021, from the <a href="https://cfcs.pku.edu.cn/english/research/turingprogram/introduction1/index.htm">Turing Class</a> at Peking University.
+          I received my Bachelor's degree in 2021, from the <a href="https://cfcs.pku.edu.cn/research/turing_program/introduction1/index.htm">Turing Class</a> at Peking University.
         </p>
         <p>
             My research interest primarily lies in reinforcement learning (RL), representation learning, and generative modeling.
-            Currently, I am focusing on: (1) pre-training and generalization in RL; (2) integrating foundation models with RL.
+            Currently, I am focusing on: (1) pre-training and generalization in RL; (2) RL for open-world & embodied agents.
         </p>
 
         <p align="center">
@@ -112,6 +112,96 @@
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
         <tbody>
 
+
+
+    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="27%">
+          <div class="one"><img src="./haoqi_files/crossdex.jpg" width="190px"></div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="73%">
+              <papertitle>Cross-Embodiment Dexterous Grasping with Reinforcement Learning</papertitle>
+      <br>
+      <strong>Haoqi Yuan</strong>, Bohan Zhou, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
+      <br>
+          2024 <br>
+          <a href="https://arxiv.org/abs/2410.02479">arXiv</a>
+          <!-- <a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
+          /
+          <a href="./haoqi_files/ptgm.bib">bibtex</a>
+          <p></p> -->
+
+          <p> CrossDex is an RL-based method for cross-embodiment dexterous grasping. Inspired by human teleoperation, we propose universal eigengrasp actions, which are converted to actions of various dexterous hands through retargeting. CrossDex successfully controls various hand embodiments with a single policy, and effectively transfers to unseen embodiments through zero-shot generalization and finetuning.  </p>
+        </td>
+      </tr>
+
+
+    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="27%">
+          <div class="one"><img src="./haoqi_files/bidexhd.jpg" width="190px"></div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="73%">
+              <papertitle>Learning Diverse Bimanual Dexterous Manipulation Skills from Human Demonstrations</papertitle>
+      <br>
+      Bohan Zhou, <strong>Haoqi Yuan</strong>, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
+      <br>
+          2024 <br>
+          <a href="https://arxiv.org/abs/2410.02477">arXiv</a>
+          <!-- <a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
+          /
+          <a href="./haoqi_files/ptgm.bib">bibtex</a>
+          <p></p> -->
+
+          <p> BiDexHD is a unified and scalable RL framework to learn bimanual manipulation skills, automatically constructing tasks from human trajectories and employing a teacher-student framework to obtain a vision-based policy tackling similar tasks. We demonstrate mastering 141 tasks from TACO dataset with a success rate of 74.59%.  </p>
+        </td>
+      </tr>
+
+
+	<tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
+        <td width="27%">
+          <div class="one"><img src="./haoqi_files/resdex.jpg" width="190px"></div>
+          <script type="text/javascript">
+          function portrait_start() {
+          document.getElementById('portrait_image').style.opacity = "1";
+          }
+          function portrait_stop() {
+          document.getElementById('portrait_image').style.opacity = "0";
+          }
+          portrait_stop()
+          </script>
+        </td>
+        <td valign="top" width="73%">
+              <papertitle>Efficient Residual Learning with Mixture-of-Experts for Universal Dexterous Grasping</papertitle>
+      <br>
+      Ziye Huang, <strong>Haoqi Yuan</strong>, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
+      <br>
+          2024 <br>
+          <a href="https://arxiv.org/abs/2410.02475">arXiv</a>
+          <!-- <a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
+          /
+          <a href="./haoqi_files/ptgm.bib">bibtex</a>
+          <p></p> -->
+
+          <p> ResDex, our RL-based framework for universal dexterous grasping, achieves SOTA performance on DexGraspNet. ResDex employs residual policy learning for efficient multi-task RL, equipped with a mixture of geometry-unaware base policies that enhances generalization and diversity in grasping styles. ResDex masters grasping 3200 objects within 12-hours' training on a single RTX 4090 GPU, achieving zero generalization gaps. </p>
+        </td>
+      </tr>
 
     <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
         <td width="27%">
