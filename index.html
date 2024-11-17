@@ -1,580 +1,411 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<!-- saved from url=(0023)https://jonbarron.info/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="“width=800">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haoqi Yuan 袁昊琦</title>
+  <link rel="icon" type="image/png" href="https://jonbarron.info/seal_icon.png">
+  <style>
+    /* 全局样式 */
+    body {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
     a {
-    color: #1772d0;
-    text-decoration:none;
+      color: #1772d0;
+      text-decoration: none;
     }
-    a:focus, a:hover {
-    color: #f09228;
-    text-decoration:none;
+    a:hover {
+      color: #f09228;
     }
-    body,td,th,tr,p,a {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
     }
-    strong {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 10px;
     }
-    heading {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 24px;
+    header img {
+      width: 135px;
+      height: auto;
+      border-radius: 8px;
     }
-    subtitle {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 18px;
+    .intro {
+      flex: 1;
     }
-    papertitle {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 700
+    h1 {
+      font-size: 32px;
+      margin: 0 0 10px;
     }
-    name {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      color: #444;
     }
-    .one
-    {
-    width: 160px;
-    height: 160px;
-    position: relative;
+    .section {
+      margin-bottom: 40px;
     }
-    .two
-    {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
+    .section p {
+      line-height: 1.8;
     }
-    .fade {
-     transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-     -webkit-transition: opacity .2s ease-in-out;
+    .papers {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
-    span.highlight {
-        background-color: #ffffd0;
+    .paper {
+      display: flex;
+      gap: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      align-items: center;
+    }
+    .paper img {
+      flex-shrink: 0;
+      width: 300px;
+      height: auto;
+      border-radius: 4px;
+    }
+    .paper-content {
+      flex-grow: 1;
+    }
+    .paper-content h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #1772d0;
+    }
+    .paper-content p {
+      margin: 5px 0;
+      line-height: 1.8;
+    }
+    .education-entry {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .education-entry img {
+      width: 65px;
+      height: auto;
+      flex-shrink: 0;
+    }
+    .services {
+      margin-bottom: 40px;
+    }
+    .service-entry h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #444;
+    }
+    .service-entry p {
+      margin: 5px 0 20px;
+      line-height: 1.8;
+    }
+    .awards ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+    .awards ul li {
+      margin-bottom: 5px;
+    }
+    .awards a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+    .awards a:hover {
+      color: #f09228;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 12px;
+      color: #888;
+    }
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      header img {
+        margin-bottom: 20px;
+      }
+      .paper {
+        flex-direction: column;
+        align-items: center;
+      }
+      .paper img {
+        width: 100%;
+        max-width: 300px;
+      }
     }
   </style>
-  <link rel="icon" type="image/png" href="https://jonbarron.info/seal_icon.png">
-  <title>Haoqi Yuan 袁昊琦</title>
-  
-  <link href="./haoqi_files/css" rel="stylesheet" type="text/css">
-  <script charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/btype.js"></script></head>
+</head>
+<body>
 
-  <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tbody><tr>
-    <td>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody><tr>
-        <td width="100%" valign="middle">
-        <p align="center">
-          <name>Haoqi Yuan 袁昊琦</name>
-        </p>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <div class="intro">
+        <h1>Haoqi Yuan 袁昊琦</h1>
         <p>
           I am a fourth-year Ph.D. student at <a href="http://english.pku.edu.cn/">Peking University</a>, advised by <a href="https://z0ngqing.github.io/"> Prof. Zongqing Lu</a>.
           I received my Bachelor's degree in 2021, from the <a href="https://cfcs.pku.edu.cn/research/turing_program/introduction1/index.htm">Turing Class</a> at Peking University.
         </p>
         <p>
-            My research interest primarily lies in reinforcement learning (RL), representation learning, and generative modeling.
-            Currently, I am focusing on: (1) pre-training and generalization in RL; (2) RL for open-world & embodied agents.
+          My research interest primarily lies in reinforcement learning (RL), representation learning, and generative modeling.
+          Currently, I am focusing on: (1) pre-training and generalization in RL; (2) RL for open-world & embodied agents.
         </p>
-
-        <p align="center">
-          <a href="mailto:yhq@pku.edu.cn">Email</a> &nbsp/&nbsp
-          <!--<a href="./haoqi_files/cv.pdf">CV</a> &nbsp/&nbsp -->
-          <a href="https://scholar.google.com/citations?user=QD_ynSgAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> &nbsp/&nbsp
+        <p>
+          <a href="mailto:yhq@pku.edu.cn">Email</a> | 
+          <a href="https://scholar.google.com/citations?user=QD_ynSgAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> | 
           <a href="https://github.com/YHQpkueecs/">Github</a>
         </p>
-        </td>
-        <td width="33%">
-        <img src="./haoqi_files/photo.jpg" width="135" alt="" style="border-style: none" align="middle">
-        </td>
-      </tr>
-      </tbody></table>
+      </div>
+      <img src="./haoqi_files/photo.jpg" alt="Haoqi Yuan">
+    </header>
 
-
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tbody><tr>
-        <td width="100%" valign="middle">
-          <strong><heading>Papers</heading></strong>
-        </td>
-      </tr>
-      </tbody></table>
-
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tbody>
-
-
-
-    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"><img src="./haoqi_files/crossdex.jpg" width="190px"></div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>Cross-Embodiment Dexterous Grasping with Reinforcement Learning</papertitle>
-      <br>
-      <strong>Haoqi Yuan</strong>, Bohan Zhou, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
-      <br>
-          2024 <br>
-          <a href="https://arxiv.org/abs/2410.02479">arXiv</a>
-          <!-- <a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
+    <!-- Papers Section -->
+    <section class="section papers">
+      <h2>Selected Papers</h2>
+  
+      <div class="paper">
+        <img src="./haoqi_files//mgpo.png" alt="MGPO">
+        <div class="paper-content">
+          <h3>Pre-Trained Multi-Goal Transformers with Prompt Optimization for Efficient Online Adaptation</h3>
+          <p><strong>Haoqi Yuan</strong>, Yuhui Fu, Feiyang Xie, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>NeurIPS</em>, 2024</p>
+          <p><a href="https://openreview.net/forum?id=DHucngOEe3">conference paper</a>
           /
-          <a href="./haoqi_files/ptgm.bib">bibtex</a>
-          <p></p> -->
+          <a href="./haoqi_files/mgpo.bib">bibtex</a></p>
+           <p> Previous works in skill pre-training utilize offline, task-agnostic dataset to accelerate RL. However, these approaches still require substantial RL steps to learn a new task. We propose MGPO, a method that leverages the power of Transformer-based policies to model sequences of goals during offline pre-training, enabling efficient online adaptation through prompt optimization.  </p>
+        </div>
+      </div>
 
-          <p> CrossDex is an RL-based method for cross-embodiment dexterous grasping. Inspired by human teleoperation, we propose universal eigengrasp actions, which are converted to actions of various dexterous hands through retargeting. CrossDex successfully controls various hand embodiments with a single policy, and effectively transfers to unseen embodiments through zero-shot generalization and finetuning.  </p>
-        </td>
-      </tr>
-
-
-    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"><img src="./haoqi_files/bidexhd.jpg" width="190px"></div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>Learning Diverse Bimanual Dexterous Manipulation Skills from Human Demonstrations</papertitle>
-      <br>
-      Bohan Zhou, <strong>Haoqi Yuan</strong>, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
-      <br>
-          2024 <br>
-          <a href="https://arxiv.org/abs/2410.02477">arXiv</a>
-          <!-- <a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
+      <div class="paper">
+        <img src="./haoqi_files//rlgpt.png" alt="RLGPT">
+        <div class="paper-content">
+          <h3> RL-GPT: Integrating Reinforcement Learning and Code-as-policy </h3>
+          <p><a href="https://www.shaotengliu.com/">Shaoteng Liu</a>, <strong>Haoqi Yuan</strong>, Minda Hu, Yanwei Li, Yukang Chen, Shu Liu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>NeurIPS <b>oral</b></em>, 2024</p>
+          <p>
+          <a href="https://openreview.net/forum?id=LEzx6QRkRH">conference paper</a>
           /
-          <a href="./haoqi_files/ptgm.bib">bibtex</a>
-          <p></p> -->
-
-          <p> BiDexHD is a unified and scalable RL framework to learn bimanual manipulation skills, automatically constructing tasks from human trajectories and employing a teacher-student framework to obtain a vision-based policy tackling similar tasks. We demonstrate mastering 141 tasks from TACO dataset with a success rate of 74.59%.  </p>
-        </td>
-      </tr>
-
-
-	<tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"><img src="./haoqi_files/resdex.jpg" width="190px"></div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>Efficient Residual Learning with Mixture-of-Experts for Universal Dexterous Grasping</papertitle>
-      <br>
-      Ziye Huang, <strong>Haoqi Yuan</strong>, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
-      <br>
-          2024 <br>
-          <a href="https://arxiv.org/abs/2410.02475">arXiv</a>
-          <!-- <a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
-          /
-          <a href="./haoqi_files/ptgm.bib">bibtex</a>
-          <p></p> -->
-
-          <p> ResDex, our RL-based framework for universal dexterous grasping, achieves SOTA performance on DexGraspNet. ResDex employs residual policy learning for efficient multi-task RL, equipped with a mixture of geometry-unaware base policies that enhances generalization and diversity in grasping styles. ResDex masters grasping 3200 objects within 12-hours' training on a single RTX 4090 GPU, achieving zero generalization gaps. </p>
-        </td>
-      </tr>
-
-    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"><img src="./haoqi_files/mgpo.png" width="190px"></div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>Pre-Trained Multi-Goal Transformers with Prompt Optimization for Efficient Online Adaptation
-</papertitle>
-      <br>
-      <strong>Haoqi Yuan</strong>, Yuhui Fu, Feiyang Xie, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
-      <br>
-          <em>NeurIPS</em>, 2024 <br>
-          <!-- <a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
-          /
-          <a href="./haoqi_files/ptgm.bib">bibtex</a>
-          <p></p> -->
-
-          <p> Previous works in skill pre-training utilize offline, task-agnostic dataset to accelerate RL. However, these approaches still require substantial RL steps to learn a new task. We propose MGPO, a method that leverages the power of Transformer-based policies to model sequences of goals during offline pre-training, enabling efficient online adaptation through prompt optimization.  </p>
-        </td>
-      </tr>
-
-
-    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"><img src="./haoqi_files/rlgpt.png" width="190px"></div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle> RL-GPT: Integrating Reinforcement Learning and Code-as-policy 
-</papertitle>
-      <br>
-        <a href="https://www.shaotengliu.com/">Shaoteng Liu</a>, <strong>Haoqi Yuan</strong>, Minda Hu, Yanwei Li, Yukang Chen, Shu Liu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>,   <a href="https://jiaya.me/home">Jiaya Jia</a>.
-      <br> <em>NeurIPS <b>oral</b></em>, 2024 <br>
           <a href="https://arxiv.org/abs/2402.19299">arXiv</a>
           /
           <a href="https://sites.google.com/view/rl-gpt">project page</a>
           /
-          <a href="./haoqi_files/rlgpt.bib">bibtex</a>
-          <p></p>
-          <p> RL-GPT equips Large Language Models (LLMs) with Reinforcement Learning (RL) tools, empowering LLM agents to solve challenging tasks in complex, open-world environments. It has a hierarchical framework: a slow LLM agent plans subtasks and selects proper tools (RL or code-as-policy); a fast LLM agent instantiates RL training pipelines or generates code to learn subtasks. LLM agents can perform self-improvement via trial-and-error efficiently. RL-GPT shows great efficiency on solving diverse Minecraft tasks, obtaining Diamond at 8% success rate within 3M environment steps. </p>
-        </td>
-      </tr>
+          <a href="./haoqi_files/rlgpt.bib">bibtex</a></p>
+           <p> RL-GPT equips Large Language Models (LLMs) with Reinforcement Learning (RL) tools, empowering LLM agents to solve challenging tasks in complex, open-world environments. It has a hierarchical framework: a slow LLM agent plans subtasks and selects proper tools (RL or code-as-policy); a fast LLM agent instantiates RL training pipelines or generates code to learn subtasks. LLM agents can perform self-improvement via trial-and-error efficiently. RL-GPT shows great efficiency on solving diverse Minecraft tasks, obtaining Diamond at 8% success rate within 3M environment steps. </p>
+        </div>
+      </div>
 
-
-    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"><img src="./haoqi_files/ptgm.png" width="190px"></div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>Pre-Training Goal-Based Models for Sample-Efficient Reinforcement Learning</papertitle>
-      <br>
-      <strong>Haoqi Yuan</strong>, Zhancun Mu, Feiyang Xie, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
-      <br>
-          <em>ICLR <b>oral</b></em> (acceptance rate: 1.2%), 2024 <br>
-          <a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
+      <div class="paper">
+        <img src="./haoqi_files//ptgm.png" alt="PTGM">
+        <div class="paper-content">
+          <h3> Pre-Training Goal-Based Models for Sample-Efficient Reinforcement Learning </h3>
+          <p><strong>Haoqi Yuan</strong>, Zhancun Mu, Feiyang Xie, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>ICLR <b>oral</b></em> (acceptance rate: 1.2%), 2024</p>
+          <p><a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
           /
-          <a href="./haoqi_files/ptgm.bib">bibtex</a>
-          <p></p>
+          <a href="./haoqi_files/ptgm.bib">bibtex</a></p>
+           <p> PTGM pre-trains on task-agnostic datasets to accelerate learning downstream tasks with RL. The pre-trained models provide: 1. a low-level, goal-conditioned policy that can perform diverse short-term behaviors; 2. a discrete high-level action space consisting of clustered goals in the dataset; 3. a goal prior model that guides and stablize downstream RL to train the high-level policy. PTGM can extend to the complicated domain Minecraft with large datasets, showing great sample efficiency, task performance, interpretability, and generalization of the acquired low-level skills. </p>
+        </div>
+      </div>
 
-          <p> PTGM pre-trains on task-agnostic datasets to accelerate learning downstream tasks with RL. The pre-trained models provide: 1. a low-level, goal-conditioned policy that can perform diverse short-term behaviors; 2. a discrete high-level action space consisting of clustered goals in the dataset; 3. a goal prior model that guides and stablize downstream RL to train the high-level policy. PTGM can extend to the complicated domain Minecraft with large datasets, showing great sample efficiency, task performance, interpretability, and generalization of the acquired low-level skills. </p>
-        </td>
-      </tr>
-
-
-    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"><img src="./haoqi_files/creative_agents.jpg" width="190px"></div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>Creative Agents: Empowering Agents with Imagination for Creative Tasks
-</papertitle>
-      <br>
-       Chi Zhang, Penglin Cai, Yuhui Fu, <strong> Haoqi Yuan </strong>, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
-      <br>
-        2023 <br>
-          <a href="https://arxiv.org/abs/2312.02519">arXiv</a>
-          /
-          <a href="https://github.com/PKU-RL/Creative-Agents">project page</a>
-          /
-          <a href="./haoqi_files/creative_agents.bib">bibtex</a>
-          <p></p>
-          <p> Creative tasks are challenging for open-ended agents, where the agent should give novel and diverse task solutions. We propose creative agents with the ability of imagination and introduce several variants in implementation. We benchmark creative tasks in the challenging open-world game Minecraft and propose novel evaluation metrics utilizing GPT-4V. Creative agents are the first AI agents accomplishing diverse building creation in Minecraft survival mode. </p>
-        </td>
-      </tr>
-        
-
-    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"><img src="./haoqi_files/plan4mc.png" width="190px"> </div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>Plan4MC: Skill Reinforcement Learning and Planning for Open-World Minecraft Tasks</papertitle>
-      <br>
-      <strong> Haoqi Yuan </strong>, Chi Zhang, Hongcheng Wang, Feiyang Xie, Penglin Cai, 
+      <div class="paper">
+        <img src="./haoqi_files//plan4mc.png" alt="Plan4MC">
+        <div class="paper-content">
+          <h3> Plan4MC: Skill Reinforcement Learning and Planning for Open-World Minecraft Tasks </h3>
+          <p><strong> Haoqi Yuan </strong>, Chi Zhang, Hongcheng Wang, Feiyang Xie, Penglin Cai, 
       <a href="https://zsdonghao.github.io/">Hao Dong</a>,
-      <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
-      <br>
-          <em>NeurIPS FMDM Workshop</em>, 2023 <br>
-          <a href="https://openreview.net/pdf?id=tTZVrnr45N">workshop paper</a>
+      <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>NeurIPS FMDM Workshop</em>, 2023</p>
+          <p> <a href="https://openreview.net/pdf?id=tTZVrnr45N">workshop paper</a>
           /
           <a href="https://arxiv.org/abs/2303.16563">arXiv</a>
           /
           <a href="https://sites.google.com/view/plan4mc">project page</a>
           / 
-          <a href="./haoqi_files/plan4mc.bib">bibtex</a>
-          <p></p>
-          <p> Plan4MC is a multi-task agent in the open world Minecraft, solving long-horizon tasks via planning over basic skills. It acquire three types of fine-grained basic skills through reinforcement learning without demonstrations. With a skill graph pre-generated by the Large Language Model, the skill search algorithm plans and interactively selects policies to solve complicated tasks. Plan4MC accomplishes 40 diverse tasks in Minecraft and unlocks Iron Pickaxe in the Tech Tree.</p>
-        </td>
-      </tr>
+          <a href="./haoqi_files/plan4mc.bib">bibtex</a></p>
+           <p> Plan4MC is a multi-task agent in the open world Minecraft, solving long-horizon tasks via planning over basic skills. It acquire three types of fine-grained basic skills through reinforcement learning without demonstrations. With a skill graph pre-generated by the Large Language Model, the skill search algorithm plans and interactively selects policies to solve complicated tasks. Plan4MC accomplishes 40 diverse tasks in Minecraft and unlocks Iron Pickaxe in the Tech Tree. </p>
+        </div>
+      </div>
 
-
-    
-    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"><img src="./haoqi_files/corro.png" width="190px"> </div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>Robust Task Representations for Offline Meta-Reinforcement Learning via Contrastive Learning</papertitle>
-      <br>
-      <strong>Haoqi Yuan</strong>, 
-      <a href="https://z0ngqing.github.io/">Zongqing Lu</a>.
-      <br>
-          <em>ICML</em>, 2022 <br>
-          <a href="https://proceedings.mlr.press/v162/yuan22a/yuan22a.pdf">conference paper</a>
+      <div class="paper">
+        <img src="./haoqi_files//corro.png" alt="CORRO">
+        <div class="paper-content">
+          <h3> Robust Task Representations for Offline Meta-Reinforcement Learning via Contrastive Learning </h3>
+          <p><strong>Haoqi Yuan</strong>, 
+      <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>ICML</em>, 2022</p>
+          <p><a href="https://proceedings.mlr.press/v162/yuan22a/yuan22a.pdf">conference paper</a>
           /
           <a href="https://github.com/PKU-AI-Edge/CORRO">project page</a>
           / 
-          <a href="./haoqi_files/corro.bib">bibtex</a>
-          <p></p>
+          <a href="./haoqi_files/corro.bib">bibtex</a></p>
+           <p> Offline meta-RL is a data-efficient RL paradigm that learns from offline data to adapt to new tasks. We propose a contrastive learning framework for robust task representations in context-based offline meta-RL. Our method improves the adaptation performance on unseen tasks, especially when the context is out-of-distribution. </p>
+        </div>
+      </div>
 
-          <p> Offline meta-RL is a data-efficient RL paradigm that learns from offline data to adapt to new tasks. We propose a contrastive learning framework for robust task representations in context-based offline meta-RL. Our method improves the adaptation performance on unseen tasks, especially when the context is out-of-distribution. </p>
-        </td>
-      </tr>
-
-
-
-      <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"> <img src="./haoqi_files/dmotion.png" width="190px"> </div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>DMotion: Robotic Visuomotor Control with Unsupervised Forward Model Learned from Videos</papertitle>
-      <br>
-      <strong>Haoqi Yuan</strong>, 
+      <div class="paper">
+        <img src="./haoqi_files//dmotion.png" alt="DMotion">
+        <div class="paper-content">
+          <h3> DMotion: Robotic Visuomotor Control with Unsupervised Forward Model Learned from Videos </h3>
+          <p> <strong>Haoqi Yuan</strong>, 
       <a href="https://warshallrho.github.io/">Ruihai Wu</a>, 
       <a href="https://andrewzh112.github.io/">Andrew Zhao</a>, 
       Haipeng Zhang, 
       <a href="https://quantumiracle.github.io/webpage/">Zihan Ding</a>, 
-      <a href="https://zsdonghao.github.io/">Hao Dong</a>.
-      <br>
-          <em>IROS</em>, 2021 <br>
-          <a href="https://ieeexplore.ieee.org/abstract/document/9636362">conference paper</a>
+      <a href="https://zsdonghao.github.io/">Hao Dong</a></p>
+          <p><em>IROS</em>, 2021</p>
+          <p><a href="https://ieeexplore.ieee.org/abstract/document/9636362">conference paper</a>
           /
           <a href="https://arxiv.org/abs/2103.04301"> arXiv</a>
           /
           <a href="https://hyperplane-lab.github.io/dmotion/">project page</a>
           / 
-          <a href="./haoqi_files/dmotion.bib">bibtex</a>
-          <p></p>
-          <p> We study learning world models from action-free videos. Our unsupervised learning method leverages spatial transformers to disentangle the motion of controllable agent, learns a forward model conditioned on the explicit representation of actions. Using a few samples labelled with true actions, our method achieves superior performance on video prediction and model predictive control tasks. </p>
-        </td>
-      </tr>
+          <a href="./haoqi_files/dmotion.bib">bibtex</a></p>
+           <p>  We study learning world models from action-free videos. Our unsupervised learning method leverages spatial transformers to disentangle the motion of controllable agent, learns a forward model conditioned on the explicit representation of actions. Using a few samples labelled with true actions, our method achieves superior performance on video prediction and model predictive control tasks. </p>
+        </div>
+      </div>
+    </section>
 
+    <section class="section papers">
+      <h2>Interesting Research</h2>
 
+      <div class="paper">
+        <img src="./haoqi_files/crossdex.jpg" alt="CrossDex">
+        <div class="paper-content">
+          <h3>Cross-Embodiment Dexterous Grasping with Reinforcement Learning</h3>
+          <p><strong>Haoqi Yuan</strong>, Bohan Zhou, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><a href="https://arxiv.org/abs/2410.02479">arXiv</a></p>
+           <p> CrossDex is an RL-based method for cross-embodiment dexterous grasping. Inspired by human teleoperation, we propose universal eigengrasp actions, which are converted to actions of various dexterous hands through retargeting. CrossDex successfully controls various hand embodiments with a single policy, and effectively transfers to unseen embodiments through zero-shot generalization and finetuning.  </p>
+        </div>
+      </div>
+      
+      <div class="paper">
+        <img src="./haoqi_files//resdex.jpg" alt="ResDex">
+        <div class="paper-content">
+          <h3>Efficient Residual Learning with Mixture-of-Experts for Universal Dexterous Grasping</h3>
+          <p>Ziye Huang, <strong>Haoqi Yuan</strong>, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><a href="https://arxiv.org/abs/2410.02475">arXiv</a></p>
+           <p> ResDex, our RL-based framework for universal dexterous grasping, achieves SOTA performance on DexGraspNet. ResDex employs residual policy learning for efficient multi-task RL, equipped with a mixture of geometry-unaware base policies that enhances generalization and diversity in grasping styles. ResDex masters grasping 3200 objects within 12-hours' training on a single RTX 4090 GPU, achieving zero generalization gaps.  </p>
+        </div>
+      </div>
 
-    <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-        <td width="27%">
-          <div class="one"> <img src="./haoqi_files/dlgan.png" width="190px"> </div>
-          <script type="text/javascript">
-          function portrait_start() {
-          document.getElementById('portrait_image').style.opacity = "1";
-          }
-          function portrait_stop() {
-          document.getElementById('portrait_image').style.opacity = "0";
-          }
-          portrait_stop()
-          </script>
-        </td>
-        <td valign="top" width="73%">
-              <papertitle>DLGAN: Disentangling Label-Specific Fine-Grained Features for Image Manipulation</papertitle>
-      <br>
-      Guanqi Zhan, Yihao Zhao, Bingchan Zhao, <strong> Haoqi Yuan </strong>,
+      <div class="paper">
+        <img src="./haoqi_files//bidexhd.jpg" alt="BiDexHD">
+        <div class="paper-content">
+          <h3>Learning Diverse Bimanual Dexterous Manipulation Skills from Human Demonstrations</h3>
+          <p> Bohan Zhou, <strong>Haoqi Yuan</strong>, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><a href="https://arxiv.org/abs/2410.02477">arXiv</a></p>
+           <p> BiDexHD is a unified and scalable RL framework to learn bimanual manipulation skills, automatically constructing tasks from human trajectories and employing a teacher-student framework to obtain a vision-based policy tackling similar tasks. We demonstrate mastering 141 tasks from TACO dataset with a success rate of 74.59%.  </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files//creative_agents.jpg" alt="CreAgent">
+        <div class="paper-content">
+          <h3> Creative Agents: Empowering Agents with Imagination for Creative Tasks </h3>
+          <p>Chi Zhang, Penglin Cai, Yuhui Fu, <strong> Haoqi Yuan </strong>, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><a href="https://arxiv.org/abs/2312.02519">arXiv</a>
+          /
+          <a href="https://github.com/PKU-RL/Creative-Agents">project page</a>
+          /
+          <a href="./haoqi_files/creative_agents.bib">bibtex</a></p>
+           <p> Creative tasks are challenging for open-ended agents, where the agent should give novel and diverse task solutions. We propose creative agents with the ability of imagination and introduce several variants in implementation. We benchmark creative tasks in the challenging open-world game Minecraft and propose novel evaluation metrics utilizing GPT-4V. Creative agents are the first AI agents accomplishing diverse building creation in Minecraft survival mode. </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files//dlgan.png" alt="DLGAN">
+        <div class="paper-content">
+          <h3> DLGAN: Disentangling Label-Specific Fine-Grained Features for Image Manipulation </h3>
+          <p> Guanqi Zhan, Yihao Zhao, Bingchan Zhao, <strong> Haoqi Yuan </strong>,
       <a href="https://cfcs.pku.edu.cn/baoquan/">Baoquan Chen</a>, 
-      <a href="https://zsdonghao.github.io/">Hao Dong</a>.
-      <br>
-        2020 <br>
-          <a href="https://arxiv.org/abs/1911.09943">arXiv</a>
-         <!--  / 
-          <a href="https://github.com/Championchess/Generative-3D-Part-Assembly">codes</a> -->
+      <a href="https://zsdonghao.github.io/">Hao Dong</a></p>
+          <p><a href="https://arxiv.org/abs/1911.09943">arXiv</a>
           / 
-          <a href="./haoqi_files/dlgan.bib">bibtex</a>
-          <p></p>
-          <p> The first work to utilize discrete multi-labels to control which features to be disentangled, and enable interpolation between two domains without using continuous labels. An end-to-end method to support image manipulation conditioned on both images and labels, enabling both smooth and immediate changes simultaneously.</p>
-        </td>
-      </tr>
+          <a href="./haoqi_files/dlgan.bib">bibtex</a></p>
+           <p> The first work to utilize discrete multi-labels to control which features to be disentangled, and enable interpolation between two domains without using continuous labels. An end-to-end method to support image manipulation conditioned on both images and labels, enabling both smooth and immediate changes simultaneously. </p>
+        </div>
+      </div>
+    </section>
 
+    <!-- Education Section -->
+    <section class="section education">
+      <h2>Education</h2>
+      <div class="education-entry">
+        <img src="./haoqi_files/pku.png" alt="Peking University">
+        <div>
+          <p><strong>Peking University</strong> - Ph.D. Candidate, <a href="https://cs.pku.edu.cn/English/Home.htm">School of Computer Science</a></p>
+          <p>Advisor: Prof. Zongqing Lu (2021 - Present)</p>
+        </div>
+      </div>
+      <div class="education-entry">
+        <img src="./haoqi_files/pku.png" alt="Peking University">
+        <div>
+          <p><strong><a href="https://cfcs.pku.edu.cn/research/turing_program/introduction1/index.htm">Turing Class</a>, Peking University</strong> - Bachelor's Degree</p>
+          <p>(2017 - 2021)</p>
+        </div>
+      </div>
+    </section>
 
-
-
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tbody><tr>
-      <td width="100%" valign="middle">
-        <strong><heading>Experience</heading></strong>
-      </td>
-    </tr>
-    </tbody></table>
-
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td width="20%">
-          <img src="./haoqi_files/baai.jpeg" width="110" alt="" style="border-style: none" align="right">
-        </td>
-        <td valign="top" width="80%">
-          <papertitle>Beijing Academy of Artificial Intelligence (BAAI)</papertitle>
-          <br>
-          Intern
-          <br>
-          2023-now
-        </td>
-      </tr>
-
-      <tr>
-        <td width="20%">
-          <img src="./haoqi_files/pku.png" width="80" alt="" style="border-style: none" align="right">
-        </td>
-        <td valign="top" width="80%">
-          <papertitle>Hyperplane Lab</papertitle>
-          <br>
-          Intern. Advised by <a href="https://zsdonghao.github.io/"> Prof. Hao Dong</a>.
-          <br>
-          2019-2021
-        </td>
-      </tr>
-  </table>
-
-
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tbody><tr>
-      <td width="100%" valign="middle">
-        <strong><heading>Education</heading></strong>
-      </td>
-    </tr>
-    </tbody></table>
-
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
-      <tr>
-        <td width="20%">
-          <img src="./haoqi_files/pku.png" width="80" alt="" style="border-style: none" align="right">
-        </td>
-        <td valign="top" width="80%">
-          <papertitle><a href="https://cs.pku.edu.cn/English/Home.htm">School of Computer Science</a>, Peking University</papertitle>
-          <br>
-          Ph.D. student
-          <br>
-          Advised by Prof. Zongqing Lu
-          <br>
-          2021-now
-        </td>
-      </tr>
-
-      <tr>
-        <td width="20%">
-          <img src="./haoqi_files/pku.png" width="80" alt="" style="border-style: none" align="right">
-        </td>
-        <td valign="top" width="80%">
-          <papertitle><a href="https://cfcs.pku.edu.cn/english/research/turingprogram/introduction1/index.htm">Turing Class</a>, Peking University</papertitle>
-          <br>
-          Undergraduate student
-          <br>
-          2017-2021
-        </td>
-      </tr>
-  </table>
-
-
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tbody><tr>
-      <td width="100%" valign="middle">
-        <strong><heading>Services</heading></strong>
-        <p style="font-size:14px;line-height:2em">
-          <b>Reviewer:</b> <br> ICML'22,24. NeurIPS'22,23,24. ICLR'24,25. AAAI'23,24,25, CVPR'24.
+    <section class="section services">
+    <h2>Services</h2>
+    <div class="service-entry">
+      <h3>Reviewer</h3>
+      <p>ICML'22, '24; NeurIPS'22, '23, '24; ICLR'24, '25; AAAI'23, '24, '25; CVPR'24</p>
+    </div>
+      <div class="service-entry">
+        <h3>Teaching Assistant</h3>
+        <p>
+        Deep Reinforcement Learning, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>, 2023 Spring <br>
+        Computational Thinking in Social Science, <a href="https://eecs.pku.edu.cn/xxkxjsxy/info/1500/6767.htm">Xiaoming Li</a>, 2020 Autumn <br>
+        Deep Generative Models, <a href="https://zsdonghao.github.io/">Hao Dong</a>, 2020 Spring
         </p>
-        <p style="font-size:14px;line-height:2em">
-          <b>Teaching Assistant: </b> <br>
-          Deep Reinforcement Learning, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>, 2023 Spring <br>
-          Computational Thinking in Social Science, <a href="https://cs.pku.edu.cn/info/1163/1508.htm">Xiaoming Li</a>, 2020 Autumn <br>
-          Deep Generative Models, <a href="https://zsdonghao.github.io/">Hao Dong</a>, 2020 Spring
-        </p>
-      </td>
-    </tr>
-    </tbody></table>
+      </div>
+    </section>
 
+    <section class="section awards">
+  <h2>Awards</h2>
+  <ul>
+    <li>Luo Yuehua Scholarship (2024)</li>
+    <li>Award for Scientific Research, Peking University (2024)</li>
+    <li><a href="http://idm.pku.edu.cn/info/1012/1629.htm">NERCVT</a> Outstanding Student of the Year (2022)</li>
+    <li>Award for Scientific Research, Peking University (2022)</li>
+    <li><strong>Peking University President Scholarship</strong> (2022)</li>
+    <li><strong>Peking University President Scholarship</strong> (2021)</li>
+    <li>John Hopcroft Scholarship (2020)</li>
+    <li>Peking University Turing Class Scholarship (2019)</li>
+    <li><strong>National Scholarship</strong> (2018)</li>
+    <li><strong>Peking University Merit Student Pacesetter</strong> (2018)</li>
+    <li><strong>Second Class Award in 33rd Chinese Physics Olympiad (Finals)</strong> (2016)</li>
+  </ul>
+</section>
 
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    <tbody><tr>
-      <td width="100%" valign="middle">
-        <strong><heading>Awards</heading></strong>
-        <p>2022: <a href="http://idm.pku.edu.cn/info/1012/1629.htm">NERCVT</a> Outstanding Student of the Year</p>
-        <p>2022: Peking University President Scholarship</p>
-        <p>2021: Peking University President Scholarship</p>
-        <p>2020: John Hopcroft Scholarship</p>
-        <p>2019: Peking University Turing Class Scholarship</p>
-        <p>2019: Meritorious Winner in 2019 Mathematical Contest in Modeling</p>
-        <p>2018: National Scholarship</p>
-        <p>2018: Peking University Merit Student Pacesetter</p>
-        <p>2016: Second Class Award in 33th Chinese Physics Olympiad (Finals)</p>
-      </td>
-    </tr>
-    </tbody></table>
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; 2024 Haoqi Yuan
+    </footer>
 
-  
+  </div>
 
-</body></html>
+</body>
+</html>
