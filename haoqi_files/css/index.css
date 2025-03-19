@@ -7,7 +7,7 @@ body {
   color: #333;
 }
 a {
-  color: #1772d0;
+  color: #193ed4;
   text-decoration: none;
 }
 a:hover {
@@ -33,7 +33,7 @@ header img {
   flex: 1;
 }
 h1 {
-  font-size: 32px;
+  font-size: 30px;
   margin: 0 0 10px;
 }
 h2 {
@@ -61,10 +61,11 @@ h2 {
   border-radius: 8px;
   padding: 20px;
   align-items: center;
+  font-size: 13px;
 }
 .paper img {
   flex-shrink: 0;
-  width: 300px;
+  width: 260px;
   height: auto;
   border-radius: 4px;
 }
@@ -73,8 +74,8 @@ h2 {
 }
 .paper-content h3 {
   margin: 0;
-  font-size: 18px;
-  color: #1772d0;
+  font-size: 16px;
+  color: #193ed4;
 }
 .paper-content p {
   margin: 5px 0;
@@ -96,7 +97,7 @@ h2 {
 }
 .service-entry h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   color: #444;
 }
 .service-entry p {
@@ -113,7 +114,7 @@ h2 {
   margin-bottom: 5px;
 }
 .awards a {
-  color: #1772d0;
+  color: #193ed4;
   text-decoration: none;
 }
 .awards a:hover {
