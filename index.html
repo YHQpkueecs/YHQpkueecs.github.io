@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haoqi Yuan 袁昊琦</title>
+  <link rel="icon" type="image/x-icon" href="./haoqi_files/icon/icon.ico">
+  <link rel="stylesheet" href="./haoqi_files/css/index.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <div class="intro">
+        <h1>Haoqi Yuan 袁昊琦</h1>
+        <p>
+          I am a fourth-year Ph.D. student at <a href="http://english.pku.edu.cn/">Peking University</a>, advised by Prof. <a href="https://z0ngqing.github.io/"> Zongqing Lu</a>.
+          I received my Bachelor's degree in 2021, from the <a href="https://cfcs.pku.edu.cn/research/turing_program/introduction1/index.htm">Turing Class</a> at Peking University.
+        </p>
+        <p>
+          My research interest primarily lies in <strong>reinforcement learning (RL)</strong> and <strong>embodied AI</strong>.
+          Currently, I am focusing on (1) pre-training and generalization in RL; (2) RL for open-world, embodied agents.
+        </p>
+        <p>
+          I am open to collaborations and discussions.
+        </p>
+        <p>
+          <a href="mailto:yhq@pku.edu.cn">yhq@pku.edu.cn</a> | 
+          <a href="https://scholar.google.com/citations?user=QD_ynSgAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a> | 
+          <a href="https://github.com/YHQpkueecs/">Github</a> | 
+          <a href="./haoqi_files/cv/en.pdf">CV</a> | 
+          <a href="./haoqi_files/cv/chn.pdf">简历</a>
+        </p>
+      </div>
+      <img src="./haoqi_files/photo.jpg" alt="Haoqi Yuan">
+    </header>
+
+    <!-- Papers Section -->
+    <section class="section papers">
+      <h2>Selected Papers</h2>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//being0.png" alt="Being-0">
+        <div class="paper-content">
+          <h3>Being-0: A Humanoid Robotic Agent with Vision-Language Models and Modular Skills</h3>
+          <p> <strong>Haoqi Yuan</strong>, Yu Bai, Yuhui Fu, Bohan Zhou,
+            Yicheng Feng, Xinrun Xu, Yi Zhan, 
+            <a href="https://tellarin.com/borje/">Börje F. Karlsson</a>, 
+            <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p>
+            <a href="https://arxiv.org/abs/2503.12533">arXiv</a>
+            /
+            <a href="https://beingbeyond.github.io/being-0/">project page</a>
+            /
+            <a href="https://github.com/BeingBeyond/being-0">GitHub</a>
+            /
+            <a href="./haoqi_files/pub/being0.bib">bibtex</a>
+            /
+            <a href="https://mp.weixin.qq.com/s/pa3FTxlBUhMjJI4QY4iOEw">blog</a>
+          </p>
+          <p>  
+            Being-0 is a hierarchical agent framework for humanoid robots, with a novel Vision-Language Model module bridging the gap between 
+            the Foundation Model's language-based task plans and the execution of low-level skills. Being-0 is capable of 
+            controlling humanoid robots with multi-fingered dexterous hands and active cameras, enhancing their 
+            dexterity in both navigation and manipulation tasks, and solving complex, long-horizon embodied 
+            tasks in the real world. 
+          </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub/crossdex.jpg" alt="CrossDex">
+        <div class="paper-content">
+          <h3>Cross-Embodiment Dexterous Grasping with Reinforcement Learning</h3>
+          <p><strong>Haoqi Yuan</strong>, Bohan Zhou, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>ICLR</em>, 2025</p>
+          <p>
+            <a href="https://openreview.net/forum?id=twIPSx9qHn">conference paper</a>
+            /
+            <a href="https://arxiv.org/abs/2410.02479">arXiv</a>
+            /
+            <a href="https://sites.google.com/view/crossdex/">project page</a>
+            /
+            <a href="https://github.com/PKU-RL/CrossDex">GitHub</a>
+            /
+            <a href="./haoqi_files/pub/crossdex.bib">bibtex</a>
+            /
+            <a href="https://mp.weixin.qq.com/s/LdLFHxeK4R0tPey8G02PbQ">blog</a>
+            /
+            <a href="https://www.bilibili.com/video/BV1wMdHYVEBz/?spm_id_from=333.1387.homepage.video_card.click">talk</a>
+            /
+            <a href="https://iclr.cc/media/iclr-2025/Slides/28010.pdf">slides</a>
+            /
+            <a href="https://iclr.cc/media/PosterPDFs/ICLR%202025/28010.png?t=1743598945.9635465">poster</a>
+          </p>
+           <p> CrossDex is an RL-based method for cross-embodiment dexterous grasping. Inspired by human teleoperation, we propose universal eigengrasp actions, which are converted to actions of various dexterous hands through retargeting. CrossDex successfully controls various hand embodiments with a single policy, and effectively transfers to unseen embodiments through zero-shot generalization and finetuning.  </p>
+        </div>
+      </div>
+      
+      <div class="paper">
+        <img src="./haoqi_files/pub//resdex.jpg" alt="ResDex">
+        <div class="paper-content">
+          <h3>Efficient Residual Learning with Mixture-of-Experts for Universal Dexterous Grasping</h3>
+          <p>Ziye Huang, <strong>Haoqi Yuan</strong>, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>ICLR</em>, 2025</p>
+          <p>
+            <a href="https://openreview.net/forum?id=BUj9VSCoET">conference paper</a>
+            /
+            <a href="https://arxiv.org/abs/2410.02475">arXiv</a>
+            /
+            <a href="https://sites.google.com/view/resdex/">project page</a>
+            /
+            <a href="https://github.com/PKU-RL/ResDex">GitHub</a>
+            /
+            <a href="./haoqi_files/pub/resdex.bib">bibtex</a>
+            /
+            <a href="https://mp.weixin.qq.com/s/LdLFHxeK4R0tPey8G02PbQ">blog</a>
+            /
+            <a href="https://www.bilibili.com/video/BV1wMdHYVEon/?spm_id_from=333.1387.homepage.video_card.click">talk</a>
+            /
+            <a href="https://iclr.cc/media/PosterPDFs/ICLR%202025/30569.png?t=1742807802.2157335">poster</a>
+          </p>
+           <p> ResDex, our RL-based framework for universal dexterous grasping, achieves SOTA performance on DexGraspNet. ResDex employs residual policy learning for efficient multi-task RL, equipped with a mixture of geometry-unaware base policies that enhances generalization and diversity in grasping styles. ResDex masters grasping 3200 objects within 12-hours' training on a single RTX 4090 GPU, achieving zero generalization gaps.  </p>
+        </div>
+      </div>
+  
+      <div class="paper">
+        <img src="./haoqi_files/pub//mgpo.png" alt="MGPO">
+        <div class="paper-content">
+          <h3>Pre-Trained Multi-Goal Transformers with Prompt Optimization for Efficient Online Adaptation</h3>
+          <p><strong>Haoqi Yuan</strong>, Yuhui Fu, Feiyang Xie, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>NeurIPS</em>, 2024</p>
+          <p><a href="https://openreview.net/forum?id=DHucngOEe3">conference paper</a>
+          /
+          <a href="https://github.com/PKU-RL/MGPO">GitHub</a>
+          /
+          <a href="./haoqi_files/pub/mgpo.bib">bibtex</a>
+          /
+          <a href="https://neurips.cc/media/PosterPDFs/NeurIPS%202024/96096.png?t=1731946873.0427732">poster</a>
+        </p>
+           <p> Previous works in skill pre-training utilize offline, task-agnostic dataset to accelerate RL. However, these approaches still require substantial RL steps to learn a new task. We propose MGPO, a method that leverages the power of Transformer-based policies to model sequences of goals during offline pre-training, enabling efficient online adaptation through prompt optimization.  </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//rlgpt.png" alt="RLGPT">
+        <div class="paper-content">
+          <h3> RL-GPT: Integrating Reinforcement Learning and Code-as-policy </h3>
+          <p><a href="https://www.shaotengliu.com/">Shaoteng Liu</a>, <strong>Haoqi Yuan</strong>, Minda Hu, Yanwei Li, Yukang Chen, Shu Liu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>, <a href="https://jiaya.me/home">Jiaya Jia</a></p>
+          <p><em>NeurIPS <b>oral</b></em>, 2024</p>
+          <p>
+          <a href="https://openreview.net/forum?id=LEzx6QRkRH">conference paper</a>
+          /
+          <a href="https://arxiv.org/abs/2402.19299">arXiv</a>
+          /
+          <a href="https://sites.google.com/view/rl-gpt">project page</a>
+          /
+          <a href="./haoqi_files/pub/rlgpt.bib">bibtex</a>
+          /
+          <a href="https://neurips.cc/media/PosterPDFs/NeurIPS%202024/95611.png?t=1733408511.702013">poster</a>
+        </p>
+           <p> RL-GPT equips Large Language Models (LLMs) with Reinforcement Learning (RL) tools, empowering LLM agents to solve challenging tasks in complex, open-world environments. It has a hierarchical framework: a slow LLM agent plans subtasks and selects proper tools (RL or code-as-policy); a fast LLM agent instantiates RL training pipelines or generates code to learn subtasks. LLM agents can perform self-improvement via trial-and-error efficiently. RL-GPT shows great efficiency on solving diverse Minecraft tasks, obtaining Diamond at 8% success rate within 3M environment steps. </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//ptgm.png" alt="PTGM">
+        <div class="paper-content">
+          <h3> Pre-Training Goal-Based Models for Sample-Efficient Reinforcement Learning </h3>
+          <p><strong>Haoqi Yuan</strong>, Zhancun Mu, Feiyang Xie, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>ICLR <b>oral</b></em> (acceptance rate: 1.2%), 2024</p>
+          <p><a href="https://openreview.net/forum?id=o2IEmeLL9r">conference paper</a>
+          /
+          <a href="https://sites.google.com/view/ptgm-iclr">project page</a>
+          /
+          <a href="https://github.com/PKU-RL/PTGM">GitHub</a>
+          /
+          <a href="./haoqi_files/pub/ptgm.bib">bibtex</a>
+          /
+          <a href="https://b23.tv/zlCDHby">talk</a>
+          /
+          <a href="https://iclr.cc/media/iclr-2024/Slides/19728.pdf">slides</a>
+          /
+          <a href="./haoqi_files/poster/ptgm.pdf">poster</a>
+        </p>
+           <p> PTGM pre-trains on task-agnostic datasets to accelerate learning downstream tasks with RL. The pre-trained models provide: 1. a low-level, goal-conditioned policy that can perform diverse short-term behaviors; 2. a discrete high-level action space consisting of clustered goals in the dataset; 3. a goal prior model that guides and stablize downstream RL to train the high-level policy. PTGM can extend to the complicated domain Minecraft with large datasets, showing great sample efficiency, task performance, interpretability, and generalization of the acquired low-level skills. </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//plan4mc.png" alt="Plan4MC">
+        <div class="paper-content">
+          <h3> Plan4MC: Skill Reinforcement Learning and Planning for Open-World Minecraft Tasks </h3>
+          <p><strong> Haoqi Yuan </strong>, Chi Zhang, Hongcheng Wang, Feiyang Xie, Penglin Cai, 
+      <a href="https://zsdonghao.github.io/">Hao Dong</a>,
+      <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>NeurIPS FMDM Workshop</em>, 2023</p>
+          <p> <a href="https://openreview.net/pdf?id=tTZVrnr45N">workshop paper</a>
+          /
+          <a href="https://arxiv.org/abs/2303.16563">arXiv</a>
+          /
+          <a href="https://sites.google.com/view/plan4mc">project page</a>
+          / 
+          <a href="https://github.com/PKU-RL/Plan4MC">GitHub</a>
+          /
+          <a href="./haoqi_files/pub/plan4mc.bib">bibtex</a>
+          /
+          <a href="https://mp.weixin.qq.com/s/EJtL9g0u2EO_IhggwgfZJg">blog</a>
+        </p>
+           <p> Plan4MC is a multi-task agent in the open world Minecraft, solving long-horizon tasks via planning over basic skills. It acquire three types of fine-grained basic skills through reinforcement learning without demonstrations. With a skill graph pre-generated by the Large Language Model, the skill search algorithm plans and interactively selects policies to solve complicated tasks. Plan4MC accomplishes 40 diverse tasks in Minecraft and unlocks Iron Pickaxe in the Tech Tree. </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//corro.png" alt="CORRO">
+        <div class="paper-content">
+          <h3> Robust Task Representations for Offline Meta-Reinforcement Learning via Contrastive Learning </h3>
+          <p><strong>Haoqi Yuan</strong>, 
+      <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><em>ICML</em>, 2022</p>
+          <p><a href="https://proceedings.mlr.press/v162/yuan22a/yuan22a.pdf">conference paper</a>
+          /
+          <a href="https://github.com/PKU-AI-Edge/CORRO">GitHub</a>
+          / 
+          <a href="./haoqi_files/pub/corro.bib">bibtex</a>
+          /
+          <a href="https://b23.tv/WXsA9nF">talk</a>
+          /
+          <a href="https://icml.cc/media/icml-2022/Slides/16240_K4BQpKc.pdf">slides</a>
+          /
+          <a href="./haoqi_files/poster/corro.pdf">poster</a>
+        </p>
+           <p> Offline meta-RL is a data-efficient RL paradigm that learns from offline data to adapt to new tasks. We propose a contrastive learning framework for robust task representations in context-based offline meta-RL. Our method improves the adaptation performance on unseen tasks, especially when the context is out-of-distribution. </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//dmotion.png" alt="DMotion">
+        <div class="paper-content">
+          <h3> DMotion: Robotic Visuomotor Control with Unsupervised Forward Model Learned from Videos </h3>
+          <p> <strong>Haoqi Yuan</strong>, 
+      <a href="https://warshallrho.github.io/">Ruihai Wu</a>, 
+      <a href="https://andrewzh112.github.io/">Andrew Zhao</a>, 
+      Haipeng Zhang, 
+      <a href="https://quantumiracle.github.io/webpage/">Zihan Ding</a>, 
+      <a href="https://zsdonghao.github.io/">Hao Dong</a></p>
+          <p><em>IROS</em>, 2021</p>
+          <p><a href="https://ieeexplore.ieee.org/abstract/document/9636362">conference paper</a>
+          /
+          <a href="https://arxiv.org/abs/2103.04301"> arXiv</a>
+          /
+          <a href="https://hyperplane-lab.github.io/dmotion/">project page</a>
+          /
+          <a href="https://github.com/hyperplane-lab/dmotion-code">GitHub</a> 
+          /
+          <a href="./haoqi_files/pub/dmotion.bib">bibtex</a>
+          /
+          <a href="https://mp.weixin.qq.com/s/OkndnZRo7sIHM52acfih1g">blog</a>
+          /
+          <a href="https://b23.tv/T8xC6zm">talk</a>
+          /
+          <a href="./haoqi_files/poster/dmotion.pdf">poster</a>
+        </p>
+           <p>  We study learning world models from action-free videos. Our unsupervised learning method leverages spatial transformers to disentangle the motion of controllable agent, learns a forward model conditioned on the explicit representation of actions. Using a few samples labelled with true actions, our method achieves superior performance on video prediction and model predictive control tasks. </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section papers">
+      <h2>Interesting Research</h2>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//bidexhd.jpg" alt="BiDexHD">
+        <div class="paper-content">
+          <h3>Learning Diverse Bimanual Dexterous Manipulation Skills from Human Demonstrations</h3>
+          <p> Bohan Zhou, <strong>Haoqi Yuan</strong>, Yuhui Fu, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p>
+            <a href="https://arxiv.org/abs/2410.02477">arXiv</a>
+            /
+            <a href="./haoqi_files/pub/bidexhd.bib">bibtex</a>
+            /
+            <a href="https://mp.weixin.qq.com/s/LdLFHxeK4R0tPey8G02PbQ">blog</a>
+          </p>
+           <p> BiDexHD is a unified and scalable RL framework to learn bimanual manipulation skills, automatically constructing tasks from human trajectories and employing a teacher-student framework to obtain a vision-based policy tackling similar tasks. We demonstrate mastering 141 tasks from TACO dataset with a success rate of 74.59%.  </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//MB-stitching.png" alt="MB-stitching">
+        <div class="paper-content">
+          <h3>Offline Model-Based Skill Stitching</h3>
+          <p> Penglin Cai, Feiyang Xie, <strong>Haoqi Yuan</strong>, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p>
+            <a href="https://openreview.net/forum?id=0YxvqG9SsJ">manuscript</a>
+            /
+            <a href="./haoqi_files/pub/MB-stitching.bib">bibtex</a>
+          </p>
+          <p>  
+            Given pre-trained short-term skills, how can we stitch them to solve long-horizon tasks accurately? 
+            We propose a data-efficient framework for offline, model-based skill stitching, 
+            enabling effective transitions between skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//creative_agents.jpg" alt="CreAgent">
+        <div class="paper-content">
+          <h3> Creative Agents: Empowering Agents with Imagination for Creative Tasks </h3>
+          <p>Chi Zhang, Penglin Cai, Yuhui Fu, <strong> Haoqi Yuan </strong>, <a href="https://z0ngqing.github.io/">Zongqing Lu</a></p>
+          <p><a href="https://arxiv.org/abs/2312.02519">arXiv</a>
+          /
+          <a href="https://sites.google.com/view/creative-agents">project page</a>
+          /
+          <a href="https://github.com/PKU-RL/Creative-Agents">GitHub</a>
+          /
+          <a href="./haoqi_files/pub/creative_agents.bib">bibtex</a>
+          /
+          <a href="https://mp.weixin.qq.com/s/HuhLX_mR9PNnP9U4IG9gVg">blog</a>
+        </p>
+           <p> Creative tasks are challenging for open-ended agents, where the agent should give novel and diverse task solutions. We propose creative agents with the ability of imagination and introduce several variants in implementation. We benchmark creative tasks in the challenging open-world game Minecraft and propose novel evaluation metrics utilizing GPT-4V. Creative agents are the first AI agents accomplishing diverse building creation in Minecraft survival mode. </p>
+        </div>
+      </div>
+
+      <div class="paper">
+        <img src="./haoqi_files/pub//dlgan.png" alt="DLGAN">
+        <div class="paper-content">
+          <h3> DLGAN: Disentangling Label-Specific Fine-Grained Features for Image Manipulation </h3>
+          <p> Guanqi Zhan, Yihao Zhao, Bingchan Zhao, <strong> Haoqi Yuan </strong>,
+      <a href="https://cfcs.pku.edu.cn/baoquan/">Baoquan Chen</a>, 
+      <a href="https://zsdonghao.github.io/">Hao Dong</a></p>
+          <p><a href="https://arxiv.org/abs/1911.09943">arXiv</a>
+          / 
+          <a href="./haoqi_files/pub/dlgan.bib">bibtex</a></p>
+           <p> The first work to utilize discrete multi-labels to control which features to be disentangled, and enable interpolation between two domains without using continuous labels. An end-to-end method to support image manipulation conditioned on both images and labels, enabling both smooth and immediate changes simultaneously. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience">
+      <h2>Experience</h2>
+      
+      <div class="education-entry">
+        <img src="./haoqi_files/icon/empty.png" alt="empty">
+        <div>
+          <p><strong>BeingBeyond 智在无界</strong>
+            <br>
+            We are a start-up team on embodied AI and foundation models. 
+            <br>
+            I am leading research on dexterous manipulation.
+            Representative work: <a href="https://arxiv.org/abs/2503.12533">Being-0</a>. </p>
+        </div>
+      </div>
+      
+      <div class="education-entry">
+        <img src="./haoqi_files/icon/baai.png" alt="BAAI">
+        <div>
+          <p><strong>Beijing Academy of Artificial Intelligence (BAAI) - Multimodal Interaction Research Center</strong>
+            <br>
+            Research Intern (2023 - 2025).
+            <br>
+            I study: (1) RL for open-world agents. Representative works: <a href="https://openreview.net/forum?id=o2IEmeLL9r">PTGM</a>, 
+            <a href="https://openreview.net/forum?id=DHucngOEe3">MGPO</a>, <a href="https://openreview.net/pdf?id=tTZVrnr45N">Plan4MC</a>, 
+            <a href="https://openreview.net/forum?id=LEzx6QRkRH">RL-GPT</a>.
+            <br>
+            (2) RL for dexterous manipulation. Representative works:
+            <a href="https://openreview.net/forum?id=twIPSx9qHn">CrossDex</a>, <a href="https://openreview.net/forum?id=BUj9VSCoET">ResDex</a>, 
+            <a href="https://arxiv.org/abs/2410.02477">BiDexHD</a>. </p>
+        </div>
+      </div>
+
+      <div class="education-entry">
+        <img src="./haoqi_files/icon/pku.png" alt="Peking University">
+        <div>
+          <p><strong>Hyperplane Lab, Peking University</strong>
+            <br>
+            Research Intern (2019 - 2021). Advised by Prof. <a href="https://zsdonghao.github.io/"> Hao Dong</a>.
+            <br>
+            I study generative models and learning physical interactions. Representative work: <a href="https://ieeexplore.ieee.org/abstract/document/9636362">DMotion</a>.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Education Section -->
+    <section class="section education">
+      <h2>Education</h2>
+      <div class="education-entry">
+        <img src="./haoqi_files/icon/pku.png" alt="Peking University">
+        <div>
+          <p><strong><a href="https://cs.pku.edu.cn/English/Home.htm">School of Computer Science</a>, Peking University</strong> - Ph.D. Candidate</p>
+          <p>Advisor: Prof. Zongqing Lu (2021 - Present)</p>
+        </div>
+      </div>
+      <div class="education-entry">
+        <img src="./haoqi_files/icon/pku.png" alt="Peking University">
+        <div>
+          <p><strong><a href="https://cfcs.pku.edu.cn/research/turing_program/introduction1/index.htm">Turing Class</a>, Peking University</strong> - Bachelor's Degree</p>
+          <p>(2017 - 2021)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services">
+    <h2>Services</h2>
+    <div class="service-entry">
+      <h3>Reviewer</h3>
+      <p>ICML'22, '24, '25; NeurIPS'22, '23, '24; ICLR'24, '25; AAAI'23, '24, '25; CVPR'24; IROS'25</p>
+    </div>
+      <div class="service-entry">
+        <h3>Teaching Assistant</h3>
+        <p>
+        Deep Reinforcement Learning, <a href="https://z0ngqing.github.io/">Zongqing Lu</a>, 2023 Spring <br>
+        Computational Thinking in Social Science, <a href="https://eecs.pku.edu.cn/xxkxjsxy/info/1500/6767.htm">Xiaoming Li</a>, 2020 Autumn <br>
+        Deep Generative Models, <a href="https://zsdonghao.github.io/">Hao Dong</a>, 2020 Spring
+        </p>
+      </div>
+    </section>
+
+    <section class="section awards">
+  <h2>Awards</h2>
+  <ul>
+    <li>Luo Yuehua Scholarship (2024)</li>
+    <li>Award for Scientific Research, Peking University (2024)</li>
+    <li><a href="http://idm.pku.edu.cn/info/1012/1629.htm">NERCVT</a> Outstanding Student of the Year (2022)</li>
+    <li>Award for Scientific Research, Peking University (2022)</li>
+    <li><strong>Peking University President Scholarship</strong> (2022)</li>
+    <li><strong>Peking University President Scholarship</strong> (2021)</li>
+    <li>John Hopcroft Scholarship (2020)</li>
+    <li>Peking University Turing Class Scholarship (2019)</li>
+    <li><strong>National Scholarship</strong> (2018)</li>
+    <li><strong>Peking University Merit Student Pacesetter</strong> (2018)</li>
+    <li><strong>Second Class Award in 33rd Chinese Physics Olympiad (Finals)</strong> (2016)</li>
+  </ul>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; 2024 Haoqi Yuan
+    </footer>
+
+  </div>
+
+</body>
+</html>
