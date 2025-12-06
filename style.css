@@ -246,52 +246,6 @@ h2 {
     visibility: visible;
 }
 
-@media (max-width: 992px) { /* 关键修改：断点从 768px 提高到 992px，以覆盖手机横屏 */
-    /* 1. 侧边栏不再固定，占用全部宽度 */
-    .sidebar { 
-        position: relative; 
-        width: 100%; 
-        height: auto; 
-        border-right: none; 
-        border-bottom: 1px solid #eaeaea; 
-        padding: 30px 20px; 
-    }
-    /* 2. 主内容区移除左侧边距 */
-    .main-content { 
-        margin-left: 0; 
-        padding: 30px 20px; 
-    }
-    
-    /* 3. 核心修复：将双栏布局强制转为单栏垂直堆叠 */
-    .two-col-layout { 
-        flex-direction: column; /* 垂直堆叠 */
-        gap: 30px; 
-    }
-    
-    /* 4. 关键修复：重置 Experience 和 Awards 的 flex 属性 */
-    .two-col-layout > section {
-        flex: none; /* 取消 flex 比例设置 */
-        width: 100%; /* 强制占用全部宽度 */
-        min-width: unset; /* 取消 min-width 限制 */
-    }
-    
-    /* 5. 其他移动端优化 */
-    .exp-tooltip { 
-        display: none; /* 移动端隐藏 Tooltip，避免遮挡 */
-    }
-    .paper { 
-        flex-direction: column; /* 论文卡片垂直堆叠 */
-    }
-    .paper img { 
-        width: 100%; 
-        max-width: 300px; 
-        align-self: flex-start; 
-    }
-    .exp-grid {
-        grid-template-columns: 1fr; /* 经验卡片也强制改为单列 */
-    }
-}
-
 .exp-tooltip strong { color: #ffe568; font-weight: 700; }
 .exp-tooltip i { font-style: italic; }
 
@@ -310,4 +264,70 @@ h2 {
     color: var(--text-main);
     margin-top: 15px; /* 增加 Reviewer/TA 标题与上一个元素的间距 */
     margin-bottom: 5px;
+}
+
+
+@media (max-width: 992px) { 
+    /* 关键修复 1: 强制容器垂直堆叠 */
+    .container {
+        flex-direction: column; 
+        min-height: auto; 
+    }
+
+    /* 2. 侧边栏样式调整：调整头像与 About Me 之间的垂直间隙 */
+    .sidebar { 
+        position: relative; 
+        width: 100%; 
+        height: auto; 
+        border-right: none; 
+        border-bottom: 1px solid #eaeaea; 
+        /* 关键修改：减少侧边栏底部 padding (15px)，缩小与主内容区的间隙 */
+        padding: 30px 20px 15px 20px; 
+    }
+    
+    /* 3. 主内容区移除左侧边距 */
+    .main-content { 
+        margin-left: 0; 
+        /* 关键修改：减少主内容区顶部 padding (15px)，缩小与侧边栏的间隙 */
+        padding: 15px 20px 30px 20px; 
+    }
+    
+    /* 4. 核心修复：将双栏布局 (Experience/Awards) 强制转为单栏垂直堆叠 */
+    .two-col-layout { 
+        flex-direction: column; 
+        /* 关键修改 3：Experience 和 Awards 之间的垂直间隙，从 30px 调整为 20px */
+        gap: 20px; 
+        /* 关键修改 4：Awards (双栏布局末尾) 和 Services 之间的间隙，从 60px 减小到 30px */
+        margin-bottom: 30px; 
+    }
+    
+    /* 5. 统一 Section 间距 */
+    .main-content section {
+        /* 控制 Services 和 Footer 之间的间隙 */
+        margin-bottom: 30px; 
+    }
+    
+    /* 6. 重置 Experience 和 Awards 的 flex 属性 */
+    .two-col-layout > section {
+        flex: none; 
+        width: 100%; 
+        min-width: unset; 
+        margin-bottom: 0; /* 确保 .two-col-layout 内部的 section 没有额外的底部 margin */
+    }
+
+    /* 7. 其他移动端优化 */
+    .exp-tooltip { 
+        display: none; 
+    }
+    .paper { 
+        flex-direction: column; 
+    }
+    .paper img { 
+        width: 100%; 
+        max-width: 300px; 
+        align-self: flex-start; 
+    }
+    .exp-grid {
+        grid-template-columns: 1fr; 
+    }
 }
