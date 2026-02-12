@@ -94,6 +94,88 @@
 
         <section class="papers">
             <h2>Publications</h2>
+
+            <div class="paper">
+                <img src="./haoqi_files/pub/demograsp.png" alt="demograsp">
+                <div class="paper-content">
+                  <h3>DemoGrasp: Universal Dexterous Grasping from a Single Demonstration</h3>
+                  <div class="paper-authors">
+                    <strong>Haoqi Yuan*</strong>, Ziye Huang*, Ye Wang, 
+                    Chuan Mao, <a href="https://co1one.github.io/">Chaoyi Xu</a>, 
+                    <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
+                  </div>
+                  <div class="paper-venue">ICLR 2026</div>
+                  <div class="paper-links">
+                     <a href="https://openreview.net/forum?id=Bf4FeuW0Mr">conference paper</a>
+                     <a href="https://arxiv.org/abs/2509.22149">arXiv</a> 
+                     <a href="https://beingbeyond.github.io/DemoGrasp/">Project Page</a> 
+                     <a href="https://github.com/BeingBeyond/DemoGrasp">GitHub</a>
+                     <a href="./haoqi_files/pub/demograsp.bib">bibtex</a>
+                     <a href="https://mp.weixin.qq.com/s/KvH5UjLVVNwh7_BdXY9Iog">blog</a>
+                     <a href="https://www.bilibili.com/video/BV13q1PBCEGq/?spm_id_from=333.337.search-card.all.click&vd_source=22bc080a152719944168d87cfefeca09">talk</a>
+                  </div>
+                  <p>
+                    DemoGrasp is a simple yet effective method for universal dexterous grasping, 
+                    formulating the problem as a one-step MDP of editing a single successful demonstration. 
+                    It achieves a SOTA success rate of 95% on DexGraspNet objects with Shadow Hand 
+                    and shows strong transferability to diverse dexterous hand embodiments and
+                    zero-shot generalization to unseen object datasets. 
+                    On the real robot, the policy successfully grasps 110 unseen objects, 
+                    including small, thin items. It generalizes to spatial, background, and lighting changes, supports both RGB and depth inputs, 
+                    and extends to language-guided grasping in cluttered scenes.  
+                  </p>
+                </div>
+              </div>
+
+              <div class="paper">
+                <img src="./haoqi_files/pub/demohlm.png" alt="DemoHLM">
+                <div class="paper-content">
+                  <h3>DemoHLM: From One Demonstration to Generalizable Humanoid Loco-Manipulation</h3>
+                  <div class="paper-authors">
+                    Yuhui Fu*, Feiyang Xie*, 
+                    <a href="https://co1one.github.io/">Chaoyi Xu</a>, Jing Xiong, 
+                    <strong>Haoqi Yuan</strong>,
+                    <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
+                  </div>
+                  <div class="paper-venue">RA-L 2026</div>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2510.11258">arXiv</a>
+                    <a href="https://beingbeyond.github.io/DemoHLM/">project page</a>
+                    <a href="https://github.com/BeingBeyond/DemoHLM">GitHub</a>
+                    <a href="./haoqi_files/pub/demohlm.bib">bibtex</a>
+                     </div>
+                  <p>
+                    DemoHLM is a framework for humanoid loco-manipulation that enables scalable data generation 
+                    and policy learning for any object-centric tasks. For each task, DemoHLM requires only a single teleoperation demonstration 
+                    in simulation and automatically synthesizes hundreds to thousands of successful trajectories that complete the 
+                    same task in varied environments. The learned policies successfully complete ten tasks on a real Unitree G1 robot with grippers
+                    and an active RGB-D camera.
+                  </p>
+                </div>
+            </div>
+
+              <div class="paper">
+                <img src="./haoqi_files/pub/proprio-mllm.png" alt="proprio-mllm">
+                <div class="paper-content">
+                  <h3>Towards Proprioception-Aware Embodied Planning for Dual-Arm Humanoid Robots</h3>
+                  <div class="paper-authors">
+                    Boyu Li, Siyuan He, Hang Xu, <strong>Haoqi Yuan</strong>, Yu Zang, 
+            Liwei Hu, Junpeng Yue, Zhenxiong Jiang, Pengbo Hu, 
+            <a href="https://tellarin.com/borje/">Börje F. Karlsson</a>, 
+            Yehui Tang, <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
+                  </div>
+                  <div class="paper-venue">ICRA 2026</div>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2510.07882">arXiv</a>
+                    <a href="./haoqi_files/pub/proprio-mllm.bib">bibtex</a>
+                     </div>
+                  <p>
+                     Proprio-MLLM enhances MLLM's embodiment awareness by incorporating proprioception 
+                    with motion-based position embedding and a cross-spatial encoder. Experiments in our DualTHOR benchmark 
+                    show that Proprio-MLLM achieves an improvement of 19.75% in embodied planning. 
+                  </p>
+                </div>
+            </div>
             
             <div class="paper">
                 <img src="./haoqi_files/pub/bidexhd.jpg" alt="BiDexHD">
@@ -366,94 +448,60 @@
             </div>
         </section>
 
+
         <section class="papers">
             <h2>Preprints</h2>
 
             <div class="paper">
-                <img src="./haoqi_files/pub/demograsp.png" alt="demograsp">
+                <img src="./haoqi_files/pub/rethink-vla.jpg" alt="Rethink-VLA">
                 <div class="paper-content">
-                  <h3>DemoGrasp: Universal Dexterous Grasping from a Single Demonstration</h3>
+                  <h3>Rethinking Visual-Language-Action Model Scaling: Alignment, Mixture, and Regularization</h3>
                   <div class="paper-authors">
-                    <strong>Haoqi Yuan*</strong>, Ziye Huang*, Ye Wang, 
-                    Chuan Mao, <a href="https://co1one.github.io/">Chaoyi Xu</a>, 
-                    <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
+                    Ye Wang*, <a href="https://zhengsipeng.github.io/">Sipeng Zheng*</a>, 
+                    Hao Luo*, <a href="https://zhangwp.com/">Wanpeng Zhang*</a>, <strong> Haoqi Yuan </strong>,
+                    Chaoyi Xu, Haiweng Xu, Yicheng Feng, Mingyang Yu, Zhiyu Kang,
+                    <a href="https://z0ngqing.github.io/">Zongqing Lu</a>,
+                    <a href="https://www.jin-qin.com/">Qin Jin<sup>&sect;</sup></a> 
                   </div>
-                  <div class="paper-venue">arXiv 2025</div>
+                  <div class="paper-venue">arXiv 2026</div>
                   <div class="paper-links">
-                     <a href="https://arxiv.org/abs/2509.22149">arXiv</a> 
-                     <a href="https://beingbeyond.github.io/DemoGrasp/">Project Page</a> 
-                     <a href="https://github.com/BeingBeyond/DemoGrasp">GitHub</a>
-                     <a href="./haoqi_files/pub/demograsp.bib">bibtex</a>
-                     <a href="https://mp.weixin.qq.com/s/KvH5UjLVVNwh7_BdXY9Iog">blog</a>
-                     <a href="https://www.bilibili.com/video/BV13q1PBCEGq/?spm_id_from=333.337.search-card.all.click&vd_source=22bc080a152719944168d87cfefeca09">talk</a>
-                  </div>
-                  <p>
-                    DemoGrasp is a simple yet effective method for universal dexterous grasping, 
-                    formulating the problem as a one-step MDP of editing a single successful demonstration. 
-                    It achieves a SOTA success rate of 95% on DexGraspNet objects with Shadow Hand 
-                    and shows strong transferability to diverse dexterous hand embodiments and
-                    zero-shot generalization to unseen object datasets. 
-                    On the real robot, the policy successfully grasps 110 unseen objects, 
-                    including small, thin items. It generalizes to spatial, background, and lighting changes, supports both RGB and depth inputs, 
-                    and extends to language-guided grasping in cluttered scenes.  
-                  </p>
-                </div>
-              </div>
-            
-            <div class="paper">
-                <img src="./haoqi_files/pub/beingh0.png" alt="Being-H0">
-                <div class="paper-content">
-                  <h3>Being-H0: Vision-Language-Action Pretraining from Large-Scale Human Videos</h3>
-                  <div class="paper-authors">
-                    Hao Luo*, Yicheng Feng*, <a href="https://zhangwp.com/">Wanpeng Zhang*</a>, 
-                    <a href="https://zhengsipeng.github.io/">Sipeng Zheng*</a>, Ye Wang, 
-                    <strong> Haoqi Yuan </strong>, Jiazheng Liu, Chaoyi Xu, 
-                    <a href="https://www.jin-qin.com/">Qin Jin</a>, 
-                    <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
-                  </div>
-                  <div class="paper-venue">arXiv 2025</div>
-                  <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2507.15597">arXiv</a>
-                    <a href="https://beingbeyond.github.io/Being-H0/">project page</a>
-                    <a href="https://github.com/BeingBeyond/Being-H0">GitHub</a>
-                    <a href="./haoqi_files/pub/beingh0.bib">bibtex</a>
+                    <a href="https://arxiv.org/abs/2602.09722v1">arXiv</a>
+                    <a href="https://research.beingbeyond.com/rethink_vla">project page</a>
+                    <a href="https://github.com/BeingBeyond/Rethink_VLA">GitHub</a>
+                    <a href="./haoqi_files/pub/rethink-vla.bib">bibtex</a>
                      </div>
                   <p>
-                    We introduce Being-H0, the first dexterous Vision-Language-Action model pretrained from large-scale human videos.
-                    Being-H0 acquires dexterous manipulation skills from UniHand, the introduced large-scale dataset containing egocentric human videos, language, and hand motion annotations. 
-                    By explicitly predicting human hand motions, the resulting foundation model seamlessly transfers to real-world robotic dexterous manipulation tasks.
+                    We present a systematic, controlled study of VLA scaling that revisits core training choices for pre-training across diverse robots.
+                    Our analysis targets three dimensions of VLA scaling: Physical Alignment, Embodiment Mixture, and Training Regularization.
+                  </p>
+                </div>
+            </div>
+
+            <div class="paper">
+                <img src="./haoqi_files/pub/beingh0.5.png" alt="Being-H0.5">
+                <div class="paper-content">
+                  <h3>Being-H0.5: Scaling Human-Centric Robot Learning for Cross-Embodiment Generalization</h3>
+                  <div class="paper-authors">
+                    Hao Luo, Ye Wang, <a href="https://zhangwp.com/">Wanpeng Zhang</a>, 
+                    <a href="https://zhengsipeng.github.io/">Sipeng Zheng</a>, Ziheng Xi, 
+                    Chaoyi Xu, Haiweng Xu, <strong> Haoqi Yuan </strong>, Chi Zhang, 
+                    Yiqing Wang, Yicheng Feng, 
+                    <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
+                  </div>
+                  <div class="paper-venue">arXiv 2026</div>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2601.12993">arXiv</a>
+                    <a href="https://research.beingbeyond.com/being-h05">project page</a>
+                    <a href="https://github.com/BeingBeyond/Being-H">GitHub</a>
+                    <a href="./haoqi_files/pub/beingh0.5.bib">bibtex</a>
+                     </div>
+                  <p>
+                    Being-H0.5 is a foundational VLA model that scales human-centric learning with unified action space to enable 
+                    robust cross-embodiment robot control.
                   </p>
                 </div>
             </div>
             
-            <div class="paper">
-                <img src="./haoqi_files/pub/being0.png" alt="Being-0">
-                <div class="paper-content">
-                  <h3>Being-0: A Humanoid Robotic Agent with Vision-Language Models and Modular Skills</h3>
-                  <div class="paper-authors">
-                    <strong>Haoqi Yuan</strong>, <a href="https://ybai-nlp.github.io/">Yu Bai</a>, 
-                        Yuhui Fu, <a href="https://zhoubohan0.github.io/">Bohan Zhou</a>, 
-                        Yicheng Feng, Xinrun Xu, Yi Zhan, 
-                        <a href="https://tellarin.com/borje/">Börje F. Karlsson</a>, 
-                        <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
-                  </div>
-                  <div class="paper-venue">arXiv 2025</div>
-                  <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2503.12533">arXiv</a>
-                    <a href="https://beingbeyond.github.io/being-0/">project page</a>
-                    <a href="https://github.com/BeingBeyond/being-0">GitHub</a>
-                    <a href="./haoqi_files/pub/being0.bib">bibtex</a>
-                    <a href="https://mp.weixin.qq.com/s/pa3FTxlBUhMjJI4QY4iOEw">blog</a>
-                    </div>
-                  <p>
-                    Being-0 is a hierarchical agent framework for humanoid robots, with a novel Vision-Language Model module bridging the gap between 
-                    the Foundation Model's language-based task plans and the execution of low-level skills. Being-0 is capable of 
-                    controlling humanoid robots with multi-fingered dexterous hands and active cameras, enhancing their 
-                    dexterity in both navigation and manipulation tasks, and solving complex, long-horizon embodied 
-                    tasks in the real world. 
-                  </p>
-                </div>
-            </div>
 
             <div class="paper">
                 <img src="./haoqi_files/pub/unitachand.png" alt="unitachand">
@@ -557,30 +605,58 @@
                   </p>
                 </div>
             </div>
-
+            
             <div class="paper">
-                <img src="./haoqi_files/pub/demohlm.png" alt="DemoHLM">
+                <img src="./haoqi_files/pub/beingh0.png" alt="Being-H0">
                 <div class="paper-content">
-                  <h3>DemoHLM: From One Demonstration to Generalizable Humanoid Loco-Manipulation</h3>
+                  <h3>Being-H0: Vision-Language-Action Pretraining from Large-Scale Human Videos</h3>
                   <div class="paper-authors">
-                    Yuhui Fu*, Feiyang Xie*, 
-                    <a href="https://co1one.github.io/">Chaoyi Xu</a>, Jing Xiong, 
-                    <strong>Haoqi Yuan</strong>,
+                    Hao Luo*, Yicheng Feng*, <a href="https://zhangwp.com/">Wanpeng Zhang*</a>, 
+                    <a href="https://zhengsipeng.github.io/">Sipeng Zheng*</a>, Ye Wang, 
+                    <strong> Haoqi Yuan </strong>, Jiazheng Liu, Chaoyi Xu, 
+                    <a href="https://www.jin-qin.com/">Qin Jin</a>, 
                     <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
                   </div>
                   <div class="paper-venue">arXiv 2025</div>
                   <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2510.11258">arXiv</a>
-                    <a href="https://beingbeyond.github.io/DemoHLM/">project page</a>
-                    <a href="https://github.com/BeingBeyond/DemoHLM">GitHub</a>
-                    <a href="./haoqi_files/pub/demohlm.bib">bibtex</a>
+                    <a href="https://arxiv.org/abs/2507.15597">arXiv</a>
+                    <a href="https://beingbeyond.github.io/Being-H0/">project page</a>
+                    <a href="https://github.com/BeingBeyond/Being-H0">GitHub</a>
+                    <a href="./haoqi_files/pub/beingh0.bib">bibtex</a>
                      </div>
                   <p>
-                    DemoHLM is a framework for humanoid loco-manipulation that enables scalable data generation 
-                    and policy learning for any object-centric tasks. For each task, DemoHLM requires only a single teleoperation demonstration 
-                    in simulation and automatically synthesizes hundreds to thousands of successful trajectories that complete the 
-                    same task in varied environments. The learned policies successfully complete ten tasks on a real Unitree G1 robot with grippers
-                    and an active RGB-D camera.
+                    We introduce Being-H0, the first dexterous Vision-Language-Action model pretrained from large-scale human videos.
+                    Being-H0 acquires dexterous manipulation skills from UniHand, the introduced large-scale dataset containing egocentric human videos, language, and hand motion annotations. 
+                    By explicitly predicting human hand motions, the resulting foundation model seamlessly transfers to real-world robotic dexterous manipulation tasks.
+                  </p>
+                </div>
+            </div>
+            
+            <div class="paper">
+                <img src="./haoqi_files/pub/being0.png" alt="Being-0">
+                <div class="paper-content">
+                  <h3>Being-0: A Humanoid Robotic Agent with Vision-Language Models and Modular Skills</h3>
+                  <div class="paper-authors">
+                    <strong>Haoqi Yuan</strong>, <a href="https://ybai-nlp.github.io/">Yu Bai</a>, 
+                        Yuhui Fu, <a href="https://zhoubohan0.github.io/">Bohan Zhou</a>, 
+                        Yicheng Feng, Xinrun Xu, Yi Zhan, 
+                        <a href="https://tellarin.com/borje/">Börje F. Karlsson</a>, 
+                        <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
+                  </div>
+                  <div class="paper-venue">arXiv 2025</div>
+                  <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2503.12533">arXiv</a>
+                    <a href="https://beingbeyond.github.io/being-0/">project page</a>
+                    <a href="https://github.com/BeingBeyond/being-0">GitHub</a>
+                    <a href="./haoqi_files/pub/being0.bib">bibtex</a>
+                    <a href="https://mp.weixin.qq.com/s/pa3FTxlBUhMjJI4QY4iOEw">blog</a>
+                    </div>
+                  <p>
+                    Being-0 is a hierarchical agent framework for humanoid robots, with a novel Vision-Language Model module bridging the gap between 
+                    the Foundation Model's language-based task plans and the execution of low-level skills. Being-0 is capable of 
+                    controlling humanoid robots with multi-fingered dexterous hands and active cameras, enhancing their 
+                    dexterity in both navigation and manipulation tasks, and solving complex, long-horizon embodied 
+                    tasks in the real world. 
                   </p>
                 </div>
             </div>
@@ -616,29 +692,6 @@
                     data-efficient imitation learning for dexterous hands. Our method successfully transfers both 
                     vision, language, and action knowledge of the VLA to the unseen embodiment of dexterous hand, achieving 
                     superior generalization compared with prior methods that mainly utilize vision pre-training.
-                  </p>
-                </div>
-            </div>
-
-            <div class="paper">
-                <img src="./haoqi_files/pub/proprio-mllm.png" alt="proprio-mllm">
-                <div class="paper-content">
-                  <h3>Towards Proprioception-Aware Embodied Planning for Dual-Arm Humanoid Robots</h3>
-                  <div class="paper-authors">
-                    Boyu Li, Siyuan He, Hang Xu, <strong>Haoqi Yuan</strong>, Yu Zang, 
-            Liwei Hu, Junpeng Yue, Zhenxiong Jiang, Pengbo Hu, 
-            <a href="https://tellarin.com/borje/">Börje F. Karlsson</a>, 
-            Yehui Tang, <a href="https://z0ngqing.github.io/">Zongqing Lu<sup>&sect;</sup></a>
-                  </div>
-                  <div class="paper-venue">arXiv 2025</div>
-                  <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2510.07882">arXiv</a>
-                    <a href="./haoqi_files/pub/proprio-mllm.bib">bibtex</a>
-                     </div>
-                  <p>
-                     Proprio-MLLM enhances MLLM's embodiment awareness by incorporating proprioception 
-                    with motion-based position embedding and a cross-spatial encoder. Experiments in our DualTHOR benchmark 
-                    show that Proprio-MLLM achieves an improvement of 19.75% in embodied planning. 
                   </p>
                 </div>
             </div>
