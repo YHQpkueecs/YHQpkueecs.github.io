@@ -15,16 +15,16 @@
       <img src="./haoqi_files/photo.jpg" alt="Haoqi Yuan" class="profile-img">
       
       <h1>Haoqi Yuan<br><span style="font-weight:400; font-size: 1.2rem; color:#000000;">袁昊琦</span></h1>
-      <p style="margin-top:5px;">Ph.D. Candidate @ PKU</p>
+      <p style="margin-top:5px;">Ph.D., Peking University</p>
 
       <div class="contact-links">
         <a href="mailto:yhq@pku.edu.cn" class="link-btn">📧 yhq@pku.edu.cn</a>
         <a href="https://scholar.google.com/citations?user=QD_ynSgAAAAJ&hl=zh-CN&oi=ao" class="link-btn">🎓 Google Scholar</a>
-        <a href="https://github.com/YHQpkueecs/" class="link-btn">💻 Github</a>
-        <div style="display:flex; gap:5px;">
+        <a href="https://github.com/YHQpkueecs/" class="link-btn">💻 GitHub</a>
+        <!-- <div style="display:flex; gap:5px;">
             <a href="./haoqi_files/cv/chn.pdf" class="link-btn" style="flex:1;">📄 CV (Ch)</a>
             <a href="./haoqi_files/cv/en.pdf" class="link-btn" style="flex:1;">📄 CV (En)</a>
-        </div>
+        </div> -->
       </div>
     </aside>
 
@@ -34,16 +34,12 @@
         <h2>About Me</h2>
         <div class="about-text">
             <p>
-              I am a fifth-year Ph.D. student at <a href="http://english.pku.edu.cn/">Peking University</a>, advised by Prof. <a href="https://z0ngqing.github.io/">Zongqing Lu</a>. 
-              I received my Bachelor's degree in 2021, from the <a href="https://cfcs.pku.edu.cn/research/turing_program/introduction1/index.htm">Turing Class</a> at Peking University.
+              I received my Ph.D. from Peking University in 2026, advised by Prof. <a href="https://z0ngqing.github.io/">Zongqing Lu</a>. 
+              I received my Bachelor's degree from the <a href="https://cfcs.pku.edu.cn/research/turing_program/introduction1/index.htm">Turing Class</a> at Peking University in 2021.
             </p>
             <p>
-              My research interest lies in <strong>Reinforcement Learning (RL)</strong> and <strong>Embodied AI</strong>. 
-              Currently, I am focusing on:
-              <ul style="margin-top:10px; margin-left:20px; color:#000000;">
-                <li>Scalable learning methods for dexterous hands and humanoid robots manipulation.</li>
-                <li>Efficient RL for open-world, embodied agents.</li>
-              </ul>
+              My research interests lie in <strong>Embodied AI</strong> and <strong>Reinforcement Learning (RL)</strong>. 
+              My current research focuses on foundation models for robotic manipulation.
             </p>
             <p>
               I am open to collaborations and discussions.
@@ -53,6 +49,35 @@
 
       <section id="selected-papers">
         <h2>Selected Papers</h2>
+
+        <div class="paper">
+            <img src="./haoqi_files/pub/qwenrobotmanip.png" alt="qwenrobotmanip">
+            <div class="paper-content">
+              <h3>Qwen-RobotManip Technical Report: Alignment Unlocks Scale for Robotic Manipulation Foundation Models</h3>
+              <div class="paper-authors">
+                <strong>Haoqi Yuan*</strong>, <a href="https://liang-zx.github.io/">Zhixuan Liang*</a>, Anzhe Chen*, Ye Wang*, Haoyang Li*, 
+                <a href="https://peilin-666.github.io/"> Pei Lin*</a>, Yiyang Huang*, Zixing Lei*, 
+                <a href="https://tongzhangthu.github.io/">Tong Zhang*</a>, <a href="https://jzhzhang.github.io/">Jiazhao Zhang</a>, Jie Zhang, 
+                Jingyang Fan, <a href="https://gengzezhou.github.io/">Gengze Zhou</a>, <a href="https://pqh22.github.io/">Qihang Peng</a>, 
+                Chenxu Lv, Xiaoyue Chen, An Yang, Fei Huang, <a href="https://justinlin610.github.io/">Junyang Lin</a>, 
+                <a href="https://dayihengliu.github.io/">Dayiheng Liu</a>, 
+                <a href="http://www.cs.columbia.edu/~jrzhou/">Jingren Zhou</a>, 
+                <a href="https://chenfei-wu.github.io/">Chenfei Wu<sup>&sect;</sup></a>, 
+                <a href="https://xionghuichen.github.io/">Xiong-Hui Chen<sup>&sect;</sup></a>
+              </div>
+              <div class="paper-venue">2026</div>
+              <div class="paper-links">
+                <a href="https://arxiv.org/abs/2606.17846">arXiv</a>
+                <a href="https://qwen.ai/blog?id=qwen-robotmanip">project page</a>
+                <a href="https://qwen.ai/blog?id=qwen-robotsuite">blog</a>
+                <a href="./haoqi_files/pub/qwenrobotmanip.bib">bibtex</a>
+                  </div>
+              <p>
+                <i>A scalable Vision-Language-Action foundation model that aligns heterogeneous robots 
+                  and substantially outperforms prior models in generalization.</i>
+              </p>
+            </div>
+        </div>
 
         <div class="paper">
           <img src="./haoqi_files/pub/demograsp.png" alt="DemoGrasp">
@@ -182,58 +207,42 @@
         </div>
       </section>
 
-      <div class="two-col-layout">
-        
+      <!-- <div class="two-col-layout">
         <section class="section experience">
           <h2>Experience</h2>
           <div class="exp-grid">
-              
+              <div class="exp-item">
+                  <img src="./haoqi_files/icon/qwen.png" alt="Qwen">
+                  <div class="exp-info">
+                      <strong>Qwen Team, Alibaba</strong>
+                      <span>Research Intern</span>
+                      <div class="exp-tooltip">
+                          <strong>Qwen Team 通义千问实验室</strong><br>
+                          I work on foundation models for robotic manipulation.
+                      </div>
+                  </div>
+              </div>
               <div class="exp-item">
                   <img src="./haoqi_files/icon/beingbeyond.png" alt="BeingBeyond">
                   <div class="exp-info">
-                      <strong>BeingBeyond 智在无界</strong>
-                      <span>Research Intern (2025-)</span>
+                      <strong>BeingBeyond</strong>
+                      <span>Research Intern</span>
                       <div class="exp-tooltip">
                           <strong>BeingBeyond 智在无界</strong><br>
-                          Research Intern (2025 - Present).<br>
-                          We are a start-up team on embodied AI and foundation models. 
-                          <br>
-                          I am leading research on dexterous manipulation. 
-                          <br>
-                          Representative works: <i>Being-0, Being-H0, DemoGrasp</i>.
+                          BeingBeyond is a start-up team on embodied AI and foundation models. <br>
+                          I lead research on dexterous manipulation.
                       </div>
                   </div>
               </div>
-
               <div class="exp-item">
                   <img src="./haoqi_files/icon/baai.png" alt="BAAI">
                   <div class="exp-info">
-                      <strong>BAAI 北京智源</strong>
-                      <span>Research Intern (2023-2025)</span>
+                      <strong>BAAI</strong>
+                      <span>Research Intern</span>
                       <div class="exp-tooltip">
                           <strong>BAAI 北京智源人工智能研究院</strong><br>
-                          Research Intern (2023-2025). <br>
-                          I focus on RL research, including RL for open-world agents and 
-                          RL for generalizable dexterous manipulation.
-                          <br>
-                          Representative works: <i>PTGM, MGPO, Plan4MC, 
-                            RL-GPT, CrossDex, ResDex, BiDexHD</i>.
-                      </div>
-                  </div>
-              </div>
-
-              <div class="exp-item">
-                  <img src="./haoqi_files/icon/pku.png" alt="PKU">
-                  <div class="exp-info">
-                      <strong>Hyperplane Lab (PKU)</strong>
-                      <span>Research Intern (2019-2021)</span>
-                      <div class="exp-tooltip">
-                          <strong>Hyperplane Lab, Peking University</strong><br>
-                          Research Intern (2019 - 2021). Advised by Prof. <a href="https://zsdonghao.github.io/"> Hao Dong</a>.
-                          <br>
-                          I study generative models and learning physical interactions. 
-                          <br>
-                          Representative work: <i>DMotion</i>.
+                          I work on RL research, including RL for open-world agents and 
+                          RL for scalable dexterous manipulation.
                       </div>
                   </div>
               </div>
@@ -243,14 +252,14 @@
         <section class="section awards">
           <h2>Selected Awards</h2>
           <ul style="padding-left: 20px; color: #444;">
-            <li>Peking University President Scholarship | 北京大学校长奖学金 (2022, 2021)</li>
-            <li>National Scholarship | 国家奖学金 (2018)</li>
-            <li>Peking University Merit Student | 北京大学三好学生 (2025, 2018)</li>
-            <li>Second Class Award in Chinese Physics Olympiad (Finals) | 全国中学生物理竞赛决赛二等奖 (2016)</li>
-            <li><a href="./haoqi_files/cv/chn.pdf">See CV for full list.</a></li>
+            <li>Excellent Graduate of Peking University (2026)</li>
+            <li>Peking University Merit Student (2025, 2018)</li>
+            <li>Peking University President Scholarship (2022, 2021)</li>
+            <li>National Scholarship (2018)</li>
+            <li>Second Class Award in Chinese Physics Olympiad (Finals) (2016)</li>
           </ul>
         </section>
-      </div> 
+      </div>  -->
       
       <section class="section services">
           <h2>Services</h2>
@@ -268,7 +277,7 @@
 
       <footer>
         <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=30a012&w=300&t=tt&d=0yvSSMkyOwlfLmu0AIasVkYD2guCQwrIWfhVinvh4-I&co=85c2ed&cmo=e0bb0c&cmn=ff5353&ct=808080'></script>
-        &copy; 2025 Haoqi Yuan.
+        &copy; 2026 Haoqi Yuan.
       </footer>
 
     </main>

@@ -199,23 +199,20 @@ h2 {
 
 /* --- 优化 3.2: Experience 和 Awards 左右排列 --- */
 .two-col-layout {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
     gap: 40px;
+    align-items: stretch;
+    margin-bottom: 40px;
 }
 
-/* 核心修改：调整左右两栏的宽度比例 */
 .two-col-layout > section {
-    margin-bottom: 40; 
+    margin-bottom: 0;
 }
 
-/* 添加针对特定 section 的 flex 属性 */
-.two-col-layout .experience {
-    flex: 1; /* 相对较窄，作为基准 */
-    min-width: 300px; /* 确保内容不会过于拥挤 */
-}
-
+.two-col-layout .experience,
 .two-col-layout .awards {
-    flex: 1.5; /* 相对较宽，比 Experience 宽 50% */
+    min-width: 0;
 }
 
 /* --- Tooltip Styling (最终修订，解决穿透问题) --- */
